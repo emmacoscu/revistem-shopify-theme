@@ -1,0 +1,256 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_TcjUQc": {
+      "type": "image-banner",
+      "blocks": {
+        "text_Eibi6x": {
+          "type": "text",
+          "settings": {
+            "text": "WE ARE HERE TO HELP",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "heading_pBE3P4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Contact Us",
+            "heading_size": "hxl"
+          }
+        }
+      },
+      "block_order": [
+        "text_Eibi6x",
+        "heading_pBE3P4"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "xsmall",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "rich_text_nQEkG8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LEpqzQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "We are here to help you",
+            "heading_size": "h2"
+          }
+        },
+        "heading_9GGbFc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Need Help?</strong>",
+            "heading_size": "h0"
+          }
+        },
+        "caption_C8BVCh": {
+          "type": "caption",
+          "settings": {
+            "caption": "Have a question or comment? Don't be shy: Reach out and say hi! Support hours: Monday-Friday, 7am-3pm",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LEpqzQ",
+        "heading_9GGbFc",
+        "caption_C8BVCh"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 68,
+        "padding_bottom": 12
+      }
+    },
+    "contact_form_9HMb99": {
+      "type": "contact-form",
+      "blocks": {
+        "name_38DUxm": {
+          "type": "name",
+          "settings": {}
+        },
+        "email_QKY9ek": {
+          "type": "email",
+          "settings": {}
+        },
+        "tel_B6DLGn": {
+          "type": "tel",
+          "settings": {}
+        },
+        "textarea_TWWxtd": {
+          "type": "textarea",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "name_38DUxm",
+        "email_QKY9ek",
+        "tel_B6DLGn",
+        "textarea_TWWxtd"
+      ],
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "sub_heading": "",
+        "sub_heading_align": "left",
+        "sub_heading_align_mobile": "left",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "lumin_gallery_KMqKMA": {
+      "type": "lumin-gallery",
+      "blocks": {
+        "text_7CyfkE": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "50",
+            "padding_size": 50,
+            "padding_size_mobile": 50,
+            "padding_left_mobile": 30,
+            "bg_color": "#f9f2e9",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "Our store",
+            "use_head_font": true,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>123 Fake St.<br/>Toronto, Canada<br/><br/>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
+            "text_color": "#212121",
+            "text_size_d": 14,
+            "text_size_m": 14,
+            "button-text": "Get Directions",
+            "button_link": "",
+            "image_content_position": "middle-center",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        },
+        "image_3mWze8": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "25",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "50",
+            "overlay_opacity": 20,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "<strong>Versatile Designs</strong>",
+            "head_color": "#ffffff",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "Perfect for work, weekends, and everything in between.",
+            "text_color": "#ffffff",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "left",
+            "image_content_position": "middle-center",
+            "grid-url": ""
+          }
+        },
+        "image_Q8m7xE": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "50",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "grid_width_mobile": "100",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "button",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_7CyfkE",
+        "image_3mWze8",
+        "image_Q8m7xE"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "color_scheme": "background-2",
+        "zoom_hover": true,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_TcjUQc",
+    "rich_text_nQEkG8",
+    "contact_form_9HMb99",
+    "lumin_gallery_KMqKMA"
+  ]
+}
