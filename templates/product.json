@@ -362,6 +362,66 @@
         "padding_bottom": 64
       }
     },
+    "blocks_gUg7JV": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_99f86a6_zTTxMC": {
+          "type": "ai_gen_block_99f86a6",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding_vertical": 40,
+            "section_padding_horizontal": 20,
+            "item_spacing": 60,
+            "mobile_padding_vertical": 30,
+            "mobile_padding_horizontal": 20,
+            "mobile_item_spacing": 40,
+            "show_dividers": true,
+            "divider_color": "#000000",
+            "divider_opacity": 10,
+            "divider_height": 60,
+            "icon_size": 32,
+            "mobile_icon_size": 28,
+            "icon_color": "#000000",
+            "icon_stroke_width": 1.5,
+            "icon_text_spacing": 16,
+            "title_size": 13,
+            "mobile_title_size": 12,
+            "title_weight": "500",
+            "title_transform": "none",
+            "title_letter_spacing": 0.5,
+            "title_color": "#000000",
+            "title_description_spacing": 6,
+            "description_size": 11,
+            "mobile_description_size": 10,
+            "description_letter_spacing": 0.3,
+            "description_color": "#000000",
+            "description_opacity": 60,
+            "badge_1_enabled": true,
+            "badge_1_icon": "spain",
+            "badge_1_title": "Fabricado en España",
+            "badge_1_description": "Producción local controlada",
+            "badge_2_enabled": true,
+            "badge_2_icon": "shipping",
+            "badge_2_title": "Envío 24–48h",
+            "badge_2_description": "Gratis desde 69€",
+            "badge_3_enabled": true,
+            "badge_3_icon": "leaf",
+            "badge_3_title": "Ingredientes premium",
+            "badge_3_description": "Sin rellenos ni aditivos",
+            "badge_4_enabled": true,
+            "badge_4_icon": "flask",
+            "badge_4_title": "Fórmula clínica",
+            "badge_4_description": "Respaldada por ciencia"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_99f86a6_zTTxMC"
+      ],
+      "name": "Trust badges",
+      "settings": {}
+    },
     "17743559751c13c9aa": {
       "type": "apps",
       "blocks": {
@@ -1110,6 +1170,7 @@
   "order": [
     "custom_liquid_Kxzcjb",
     "main",
+    "blocks_gUg7JV",
     "17743559751c13c9aa",
     "lumin_review_Bn3WBa",
     "rich_text_Wt37pn",
