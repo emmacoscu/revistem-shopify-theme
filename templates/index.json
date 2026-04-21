@@ -729,95 +729,6 @@
         "include_margins": false
       }
     },
-    "trust_badges_7RapBC": {
-      "type": "trust-badges",
-      "blocks": {
-        "image_xdgFUQ": {
-          "type": "image",
-          "settings": {
-            "feature_title": "<strong>Envío rápido</strong>",
-            "feature_text": "<p>Reciba su pedido rápidamente, directamente en la puerta de su casa.</p>",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_MWPrD9": {
-          "type": "image",
-          "settings": {
-            "feature_title": "<strong>Garantía de igualación de precios</strong>",
-            "feature_text": "<p>Le garantizamos el mejor precio, o lo igualaremos.</p>",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_YfPfzG": {
-          "type": "image",
-          "settings": {
-            "feature_title": "<strong>Cambio sin complicaciones</strong>",
-            "feature_text": "<p>Intercambios sencillos, sin estrés ni complicaciones.</p>",
-            "feature_url": "",
-            "hide_image": false
-          }
-        },
-        "image_D8KyTT": {
-          "type": "image",
-          "settings": {
-            "feature_title": "<strong>Reseñas de 5 estrellas</strong>",
-            "feature_text": "<p>Apreciados por nuestros clientes, como lo demuestran nuestras excelentes valoraciones.</p>",
-            "feature_url": "",
-            "hide_image": false
-          }
-        }
-      },
-      "block_order": [
-        "image_xdgFUQ",
-        "image_MWPrD9",
-        "image_YfPfzG",
-        "image_D8KyTT"
-      ],
-      "disabled": true,
-      "name": "Feature Blocks",
-      "settings": {
-        "feature_row": 4,
-        "feature_row_mobile": 1,
-        "feature_gap": 20,
-        "feature_gap_mobile": 20,
-        "feature_padding_horizontal": 0,
-        "feature_padding_vertical": 0,
-        "feature_radius": 16,
-        "feature_border_thickness": 0,
-        "feature_shadow": false,
-        "feature_heading_size": 14,
-        "feature_heading_size_mobile": 12,
-        "feature_heading_height": 130,
-        "feature_heading_mt": 8,
-        "feature_text_size": 12,
-        "feature_text_size_mobile": 12,
-        "feature_text_height": 130,
-        "feature_text_mt": 4,
-        "feature_icon_size": 42,
-        "feature_icon_size_mobile": 42,
-        "feature_bg": "#ffffff",
-        "feature_border_color": "#000000",
-        "feature_shadow_color": "#000000",
-        "feature_heading_color": "#000000",
-        "feature_text_color": "#000000",
-        "feature_icon_color": "#000000",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "margin_top": 24,
-        "margin_bottom": 24,
-        "padding_top": 16,
-        "padding_bottom": 16,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "full_width": false,
-        "content_width": 120,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
     "autoplay_video_pUjczr": {
       "type": "autoplay-video",
       "blocks": {
@@ -843,6 +754,7 @@
         "heading_6kLkyj",
         "text_x8tq4B"
       ],
+      "disabled": true,
       "name": "Autoplay video",
       "settings": {
         "video": "shopify://files/videos/REVICORE science-led health optimization (1).mp4",
@@ -884,7 +796,6 @@
     "rich_text_kViQY7",
     "before_after_rmYV6L",
     "1774355846783fd27e",
-    "trust_badges_7RapBC",
     "autoplay_video_pUjczr"
   ]
 }
