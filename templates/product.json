@@ -166,7 +166,7 @@
             "skip_cart": false,
             "button_padding_top": 20,
             "button_padding_bottom": 20,
-            "button_custom_style": false,
+            "button_custom_style": true,
             "button_font_size": 16,
             "button_height": 45,
             "lm_main_button": "#000000",
