@@ -236,6 +236,7 @@
         "image_3mWze8",
         "image_Q8m7xE"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "color_scheme": "background-2",
