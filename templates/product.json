@@ -61,7 +61,7 @@
         "title_Fnnnm3": {
           "type": "title",
           "settings": {
-            "title_size_dt": 40,
+            "title_size_dt": 48,
             "title_size_mb": 28,
             "title_line_height": 1.1,
             "title_text_transform": "none",
@@ -76,7 +76,7 @@
             "reverse_price": false,
             "save_text_size": 12,
             "price_weight": "normal",
-            "price_text_size": 20,
+            "price_text_size": 24,
             "price_text_size_mb": 19,
             "compare_price": "#9c9c9c",
             "original_price": "#000000",
