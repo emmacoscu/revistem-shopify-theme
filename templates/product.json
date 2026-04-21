@@ -158,6 +158,27 @@
           "type": "description",
           "settings": {}
         },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "skip_cart": false,
+            "button_padding_top": 20,
+            "button_padding_bottom": 20,
+            "button_custom_style": false,
+            "button_font_size": 16,
+            "button_height": 45,
+            "lm_main_button": "#000000",
+            "lm_main_button_gr": "",
+            "lm_main_text": "#ffffff",
+            "lm_main_text_hover": "#0b57d0",
+            "lm_main_button_hover": "#ffffff",
+            "lm_main_button_gr_hover": "",
+            "lm_main_button_border_width": 0,
+            "lm_main_button_border_color": "#000000"
+          }
+        },
         "shipping_CGrYT3": {
           "type": "shipping",
           "settings": {
@@ -182,27 +203,6 @@
             "padding_bottom": 0,
             "margin_top": 16,
             "margin_bottom": 0
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true,
-            "skip_cart": false,
-            "button_padding_top": 20,
-            "button_padding_bottom": 20,
-            "button_custom_style": false,
-            "button_font_size": 16,
-            "button_height": 45,
-            "lm_main_button": "#000000",
-            "lm_main_button_gr": "",
-            "lm_main_text": "#ffffff",
-            "lm_main_text_hover": "#0b57d0",
-            "lm_main_button_hover": "#ffffff",
-            "lm_main_button_gr_hover": "",
-            "lm_main_button_border_width": 0,
-            "lm_main_button_border_color": "#000000"
           }
         },
         "collapsible_tab_ptCdTk": {
@@ -304,8 +304,8 @@
         "trust_feature_xnRc3U",
         "inventory_4fpVhP",
         "description_kzKRHC",
-        "shipping_CGrYT3",
         "buy_buttons",
+        "shipping_CGrYT3",
         "collapsible_tab_ptCdTk",
         "collapsible_tab_EBKNVc",
         "collapsible_tab_Adeqcw",
