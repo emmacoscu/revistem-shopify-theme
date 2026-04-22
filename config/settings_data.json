@@ -207,7 +207,7 @@
     "show_line_separator": false,
     "hide_tax_drawer": true,
     "hide_total_drawer": false,
-    "show_extra_line": true,
+    "show_extra_line": false,
     "show_total_save_price": true,
     "total_save_price_text": "Savings",
     "total_save_price_font_size": 13,
@@ -333,11 +333,6 @@
     "blocks": {
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
-      "7815872286074466659": {
-        "type": "shopify://apps/ga-smooth-scroll/blocks/app-extension/019a0aac-44d1-745a-b88b-0dbbf7e30dce",
         "disabled": false,
         "settings": {}
       },
