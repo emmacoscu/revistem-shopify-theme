@@ -275,6 +275,97 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1776845885f5d6c704": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_b36d37b_QcF8xd": {
+          "type": "ai_gen_block_b36d37b",
+          "settings": {
+            "title": "Compatible con tu protocolo",
+            "body_text": "<p>Formulado para complementar tratamientos médicos como finasterida, dutasterida y minoxidil. Sin interferencias, sin contraindicaciones.</p>",
+            "show_bullets": true,
+            "bullet_1": "No interfiere con tratamientos farmacológicos",
+            "bullet_2": "Ingredientes clínicamente estudiados",
+            "bullet_3": "Apto para uso prolongado",
+            "icon_style": "check",
+            "text_alignment": "center",
+            "content_max_width": 700,
+            "desktop_width_percent": 100,
+            "section_padding": 60,
+            "title_size": 28,
+            "title_weight": "500",
+            "title_letter_spacing": 0,
+            "title_spacing": 20,
+            "title_color": "#000000",
+            "body_size": 16,
+            "body_line_height": 1.6,
+            "body_opacity": 0.8,
+            "body_spacing": 0,
+            "body_color": "#000000",
+            "bullets_top_spacing": 30,
+            "bullets_gap": 12,
+            "bullet_size": 15,
+            "bullet_color": "#000000",
+            "icon_size": 18,
+            "icon_spacing": 10,
+            "icon_color": "#000000"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_b36d37b_QcF8xd"
+      ],
+      "settings": {}
+    },
+    "17768460246c86cffa": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_da16769_XPKK4V": {
+          "type": "ai_gen_block_da16769",
+          "settings": {
+            "main_statement": "<p>Revistem no sustituye tratamientos.<br/>Los complementa con criterio.</p>",
+            "supporting_line": "<p>Porque entender el problema es el primer paso para tratarlo bien.</p>",
+            "max_width": 800,
+            "text_alignment": "center",
+            "spacing_between": 24,
+            "main_font": "questrial_n4",
+            "main_font_size": 42,
+            "main_font_size_mobile": 28,
+            "main_line_height": 1.3,
+            "main_line_height_mobile": 1.3,
+            "main_letter_spacing": 0,
+            "main_text_color": "#000000",
+            "supporting_font": "assistant_n4",
+            "supporting_font_size": 16,
+            "supporting_font_size_mobile": 14,
+            "supporting_line_height": 1.5,
+            "supporting_line_height_mobile": 1.5,
+            "supporting_letter_spacing": 0,
+            "supporting_text_color": "#000000",
+            "supporting_opacity": 70,
+            "show_divider_top": true,
+            "show_divider_bottom": false,
+            "divider_width": 60,
+            "divider_height": 1,
+            "divider_color": "#000000",
+            "divider_opacity": 20,
+            "divider_margin_top": 0,
+            "divider_margin_bottom": 40,
+            "padding_top": 100,
+            "padding_bottom": 100,
+            "padding_top_mobile": 60,
+            "padding_bottom_mobile": 60,
+            "background_color": "#FFFFFF"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_da16769_XPKK4V"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -284,6 +375,8 @@
     "rich_text_pxGm8H",
     "image_with_text_RfXdzE",
     "177684373859d7c8c8",
-    "featured_collection_XDxYph"
+    "featured_collection_XDxYph",
+    "1776845885f5d6c704",
+    "17768460246c86cffa"
   ]
 }
