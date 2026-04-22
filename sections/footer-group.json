@@ -249,18 +249,18 @@
             "show_social": true
           }
         },
-        "link_list_JWiGYM": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Nuestras políticas",
-            "menu": "nuestras-pol-ticas"
-          }
-        },
         "link_list_JinYBi": {
           "type": "link_list",
           "settings": {
             "heading": "Enlaces rápidos",
             "menu": "enlaces-r-pidos"
+          }
+        },
+        "link_list_JWiGYM": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Nuestras políticas",
+            "menu": "nuestras-pol-ticas"
           }
         },
         "text_UxTGHt": {
@@ -273,8 +273,8 @@
       },
       "block_order": [
         "brand_information_Br4bBK",
-        "link_list_JWiGYM",
         "link_list_JinYBi",
+        "link_list_JWiGYM",
         "text_UxTGHt"
       ],
       "settings": {
