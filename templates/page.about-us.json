@@ -50,9 +50,11 @@
         "heading_ydJ6EU",
         "text_XKw8xf"
       ],
+      "disabled": true,
       "name": "Video Banner",
       "settings": {
         "color_scheme": "inverse",
+        "video": "shopify://files/videos/REVICORE science-led health optimization.mp4",
         "video_url": "",
         "video-alt": "",
         "content_position": "middle-center",
@@ -66,14 +68,14 @@
         "heading_4hrhQj": {
           "type": "heading",
           "settings": {
-            "heading": "Once upon a time...",
+            "heading": "El problema no está en la superficie",
             "heading_size": "h1"
           }
         },
         "text_BJemWy": {
           "type": "text",
           "settings": {
-            "text": "<p>in the heart of a bustling city, there was a small juice stand nestled between towering skyscrapers and bustling streets. This humble beginning marked the start of a remarkable journey for our founders, Emma and David, who shared a passion for health and wellness.</p>"
+            "text": "<p>La alopecia androgenética no es solo caída.<br/><br/>Es un proceso sistémico que involucra inflamación, estrés oxidativo, señalización hormonal y nutrición celular.</p><p>Tratarla solo desde fuera —o suplementarla sin criterio— es ignorar cómo funciona el cuerpo.</p>"
           }
         }
       },
@@ -85,7 +87,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-bf7e652d-223a-45bd-a4dc-176ed319db91",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -134,12 +136,62 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_banner_whhJiG": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_TC4xXi": {
+          "type": "heading",
+          "settings": {
+            "heading": "No es un suplemento más.",
+            "heading_size": "h1"
+          }
+        },
+        "text_TKTCPJ": {
+          "type": "text",
+          "settings": {
+            "text": "Revistem nace de una pregunta concreta:¿por qué la mayoría de suplementos capilares ignoran la biología real del folículo?",
+            "text_style": "subtitle"
+          }
+        },
+        "buttons_kMzThX": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Etiqueta de botón",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TC4xXi",
+        "text_TKTCPJ",
+        "buttons_kMzThX"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/WhatsApp_Image_2026-03-23_at_11.29.38_PM_b4ead14c-89e0-4f15-81b2-65fbf3196c45.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
     "video_new_Wpi43U",
     "rich_text_pxGm8H",
-    "multirow_mtDQcq"
+    "multirow_mtDQcq",
+    "image_banner_whhJiG"
   ]
 }
