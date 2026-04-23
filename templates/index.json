@@ -84,7 +84,7 @@
         "timer_size_mb": 0.8,
         "timer_days": "",
         "hide_days": true,
-        "timer_hrs": "72",
+        "timer_hrs": "",
         "timer_min": "",
         "timer_sec": "",
         "head_font": false,
