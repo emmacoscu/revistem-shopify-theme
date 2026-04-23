@@ -179,6 +179,7 @@
             "grid_width_tablet": "33.3333333",
             "small_hide": false,
             "grid_width_mobile": "50",
+            "image": "shopify://shop_images/Gray_and_Black_Minimalist_Digital_Mockup_Facebook_Post_3_03ec4cc0-3599-4222-b920-374ffa13aac9.png",
             "overlay_opacity": 20,
             "opacity_color": "#000000",
             "padding_size": 30,
@@ -209,6 +210,7 @@
             "grid_width_tablet": "33.3333333",
             "small_hide": false,
             "grid_width_mobile": "100",
+            "image": "shopify://shop_images/Gray_and_Black_Minimalist_Digital_Mockup_Facebook_Post_5_15722c76-48c3-487a-b0a0-ded32321d6c0.png",
             "overlay_opacity": 0,
             "opacity_color": "#000000",
             "padding_size": 30,
@@ -236,7 +238,6 @@
         "image_3mWze8",
         "image_Q8m7xE"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "color_scheme": "background-2",
@@ -246,6 +247,98 @@
         "margin_top": 0,
         "margin_bottom": 36
       }
+    },
+    "contact_form_KFzHpY": {
+      "type": "contact-form",
+      "blocks": {
+        "name_kYHFAR": {
+          "type": "name",
+          "settings": {}
+        },
+        "email_qCR7VR": {
+          "type": "email",
+          "settings": {}
+        },
+        "tel_fmMDDQ": {
+          "type": "tel",
+          "settings": {}
+        },
+        "textarea_mkJ8dD": {
+          "type": "textarea",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "name_kYHFAR",
+        "email_qCR7VR",
+        "tel_fmMDDQ",
+        "textarea_mkJ8dD"
+      ],
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Contacto",
+        "heading_size": "h0",
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "sub_heading": "<p>Si tienes dudas sobre el tratamiento, el pedido o tu compra, <br/>escríbenos y te ayudamos.</p>",
+        "sub_heading_align": "center",
+        "sub_heading_align_mobile": "center",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_NiCiRD": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_gtUnHw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Puedo escribir para dudas sobre qué fórmula elegir?",
+            "icon": "question_mark",
+            "row_content": "<p>Sí, podemos orientarte según tu caso y el punto en el que estés.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_bddKRG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Respondéis dudas sobre pedidos?",
+            "icon": "question_mark",
+            "row_content": "<p>Sí, también puedes escribirnos para temas de compra, envío o seguimiento.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_zfpwnX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuál es el tiempo de respuesta?",
+            "icon": "question_mark",
+            "row_content": "<p>Normalmente respondemos en 24–48h laborables.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_gtUnHw",
+        "collapsible_row_bddKRG",
+        "collapsible_row_zfpwnX"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "FAQ",
+        "heading": "Preguntas frecuentes",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-2",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -253,6 +346,8 @@
     "image_banner_TcjUQc",
     "rich_text_nQEkG8",
     "contact_form_9HMb99",
-    "lumin_gallery_KMqKMA"
+    "lumin_gallery_KMqKMA",
+    "contact_form_KFzHpY",
+    "collapsible_content_NiCiRD"
   ]
 }
