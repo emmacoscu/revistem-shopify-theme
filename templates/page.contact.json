@@ -163,7 +163,7 @@
             "text_color": "#212121",
             "text_size_d": 14,
             "text_size_m": 14,
-            "button-text": "Get Directions",
+            "button-text": "",
             "button_link": "",
             "image_content_position": "middle-center",
             "desktop_content_alignment": "left",
