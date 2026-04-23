@@ -68,33 +68,21 @@
         "heading_TC4xXi": {
           "type": "heading",
           "settings": {
-            "heading": "No es un suplemento más.",
+            "heading": "El problema no está en la superficie",
             "heading_size": "h1"
           }
         },
         "text_TKTCPJ": {
           "type": "text",
           "settings": {
-            "text": "Revistem nace de una pregunta concreta:¿por qué la mayoría de suplementos capilares ignoran la biología real del folículo?",
+            "text": "La alopecia androgenética no es solo caída.Es un proceso sistémico que involucra inflamación, estrés oxidativo, señalización hormonal y nutrición celular.Tratarla solo desde fuera —o suplementarla sin criterio— es ignorar cómo funciona el cuerpo.",
             "text_style": "subtitle"
-          }
-        },
-        "buttons_kMzThX": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Etiqueta de botón",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading_TC4xXi",
-        "text_TKTCPJ",
-        "buttons_kMzThX"
+        "text_TKTCPJ"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -132,10 +120,11 @@
         "heading_4hrhQj",
         "text_BJemWy"
       ],
+      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "background-1",
         "full_width": true,
         "padding_top": 40,
@@ -212,21 +201,21 @@
             "main_font_size_mobile": 28,
             "main_line_height": 1.2,
             "main_letter_spacing": 0,
-            "main_text_color": "#000000",
+            "main_text_color": "#ffffff",
             "supporting_font": "assistant_n4",
             "supporting_font_size": 16,
             "supporting_font_size_mobile": 14,
             "supporting_line_height": 1.5,
             "supporting_letter_spacing": 0,
             "supporting_spacing": 24,
-            "supporting_text_color": "#000000",
+            "supporting_text_color": "#ffffff",
             "supporting_opacity": 70,
             "max_width": 800,
             "spacing_top": 100,
             "spacing_bottom": 100,
             "spacing_top_mobile": 60,
             "spacing_bottom_mobile": 60,
-            "background_color": "#e6e6e6",
+            "background_color": "#000000",
             "show_divider_top": false,
             "show_divider_bottom": false,
             "divider_width": 60,
