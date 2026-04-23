@@ -1,0 +1,1185 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_Kxzcjb": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n.moving-bar {\n  overflow: hidden;\n  white-space: nowrap;\n  background: #000;\n  padding: 17px 0;\n}\n\n.moving-track {\n  display: inline-block;\n  animation: scrollText 22s linear infinite;\n}\n\n.moving-bar:hover .moving-track {\n  animation-play-state: paused;\n}\n\n.moving-item {\n  display: inline-flex;\n  align-items: center;\n  margin: 0 50px;\n  font-size: 17px;\n  font-weight: 400;\n  color: #fff;\n}\n\n.moving-item .icon {\n  margin-right: 10px;\n  font-size: 20px;\n  color: #fff;\n}\n\n@keyframes scrollText {\n  0% { transform: translateX(0); }\n  100% { transform: translateX(-50%); }\n}\n</style>\n\n<div class=\"moving-bar\">\n  <div class=\"moving-track\">\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">✓</span> Transparencia total\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">★</span> Recomendado por expertos\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">✿</span> Fórmulas ancestrales\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">⚙</span> Ciencia y naturaleza\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">➤</span> Fácil de integrar\n    </span>\n\n    <!-- Duplicate for smooth loop -->\n    <span class=\"moving-item\">\n      <span class=\"icon\">✓</span> Transparencia total\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">★</span> Recomendado por expertos\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">✿</span> Fórmulas ancestrales\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">⚙</span> Ciencia y naturaleza\n    </span>\n\n    <span class=\"moving-item\">\n      <span class=\"icon\">➤</span> Fácil de integrar\n    </span>\n\n  </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "judge_me_reviews_preview_badge_4RGF7L": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "breadcrumbs_tr4UFi": {
+          "type": "breadcrumbs",
+          "disabled": true,
+          "settings": {
+            "title_home": "Home",
+            "text_transform": "none",
+            "text_size": 14,
+            "spacing": 0,
+            "padding_top": 0,
+            "padding_top_mb": 0,
+            "padding_bottom": 0,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "review_mMj4kD": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "lrw_text": "4.8 From 136 Reviews",
+            "text_size": 12,
+            "star_style": "star",
+            "star_size": 0.6,
+            "star_rating": 4.5,
+            "lrw_star_color": "#000000",
+            "lrw_star_color_disable": "#eeeeee",
+            "lrw_color": "#000000",
+            "margin_top": 10,
+            "margin_bottom": 10
+          }
+        },
+        "title_Fnnnm3": {
+          "type": "title",
+          "settings": {
+            "title_size_dt": 48,
+            "title_size_mb": 28,
+            "title_line_height": 1.1,
+            "title_text_transform": "none",
+            "title_letter_spacing": 0,
+            "title_font_weight": 400
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "hide_tax_shipping": true,
+            "reverse_price": false,
+            "save_text_size": 12,
+            "price_weight": "normal",
+            "price_text_size": 24,
+            "price_text_size_mb": 19,
+            "compare_price": "#9c9c9c",
+            "original_price": "#000000",
+            "show_save_price": true,
+            "save_text": "#000000",
+            "save_bg": "#ffffff",
+            "save_border": "#000000",
+            "save_border_thickness": 1,
+            "save_corner_radius": 0,
+            "save_shadow_opacity": 0,
+            "save_shadow_horizontal_offset": 0,
+            "save_shadow_vertical_offset": 0,
+            "save_shadow_blur": 0
+          }
+        },
+        "trust_feature_xnRc3U": {
+          "type": "trust-feature",
+          "disabled": true,
+          "settings": {
+            "trust_alignment": "flex-start",
+            "layout_mode": "auto",
+            "hide_icon_1": false,
+            "icon_size_1": 36,
+            "heading_1": "Free Shipping",
+            "heading_size_1": 12,
+            "text_1": "<p>Free worldwide shipping</p>",
+            "text_size_1": 12,
+            "show_background_1": true,
+            "background_1": "#f9f9f9",
+            "border_color_1": "rgba(0,0,0,0)",
+            "border_radius_1": 0,
+            "hide_second_feature": false,
+            "hide_icon_2": false,
+            "icon_size_2": 36,
+            "heading_2": "24/7 Support",
+            "heading_size_2": 12,
+            "text_2": "<p>We're here to help</p>",
+            "text_size_2": 12,
+            "show_background_2": true,
+            "background_2": "#f9f9f9",
+            "border_color_2": "rgba(0,0,0,0)",
+            "border_radius_2": 0,
+            "padding_top": 4,
+            "padding_bottom": 20
+          }
+        },
+        "inventory_4fpVhP": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "uppercase",
+            "bar_font_size": 11,
+            "inventory_threshold": 12,
+            "show_inventory_bar": true,
+            "show_inventory_pill": true,
+            "text_soldout": "Desgraciadamente ya no hay stock",
+            "text_untracked": "Actualmente hay stock",
+            "text_low_one": "Date prisa! Solo queda 1 en stock",
+            "text_low_many": "Hurry up! Only [qty] items are in stock.",
+            "text_normal": "",
+            "inv_bar_height": 1,
+            "inv_bar_radius": 0,
+            "inv_bar_width_normal": 100,
+            "inv_bar_width_low": 62,
+            "inv_bar_width_untrack": 50,
+            "inv_bar_width_sold": 0,
+            "normal_pill_color": "#23c460",
+            "normal_color": "#23c460",
+            "normal_color_2": "#23c460",
+            "low_pill_color": "#ff0e0e",
+            "low_color": "#ea0404",
+            "low_color_2": "#fdc11b",
+            "untrack_pill_color": "#008763",
+            "untrack_background_bar": "#008763",
+            "sold_pill_color": "#c8c8c8",
+            "background_bar": "#e4e4e4"
+          }
+        },
+        "description_kzKRHC": {
+          "type": "description",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "skip_cart": false,
+            "button_padding_top": 20,
+            "button_padding_bottom": 20,
+            "button_custom_style": true,
+            "button_font_size": 16,
+            "button_height": 45,
+            "lm_main_button": "#000000",
+            "lm_main_button_gr": "",
+            "lm_main_text": "#ffffff",
+            "lm_main_text_hover": "#000000",
+            "lm_main_button_hover": "#ffffff",
+            "lm_main_button_gr_hover": "",
+            "lm_main_button_border_width": 0,
+            "lm_main_button_border_color": "#000000"
+          }
+        },
+        "shipping_CGrYT3": {
+          "type": "shipping",
+          "settings": {
+            "ship_days": 5,
+            "skip_saturday": true,
+            "skip_sunday": true,
+            "cut_off_time": 24,
+            "hide_icon": false,
+            "icon_size": 20,
+            "image_ani": "none",
+            "text_size": 10,
+            "text_style": "uppercase",
+            "text": "Order in (timer) and Get delivery By (date)",
+            "hours": "h",
+            "minutes": "m",
+            "date_locale": "en-US",
+            "ship_bg": "rgba(0,0,0,0)",
+            "show_border": false,
+            "ship_border": "#f2f2f2",
+            "border_radius": 0,
+            "padding_top": 12,
+            "padding_bottom": 0,
+            "margin_top": 16,
+            "margin_bottom": 0
+          }
+        },
+        "collapsible_tab_ptCdTk": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Qué es Revistem Hair Forte",
+            "icon": "question_mark",
+            "content": "<p><br/><strong>Revistem Hair Forte</strong> es la versión avanzada de nuestra línea capilar. Parte de la misma base de Revistem Hair, con NAC, Saw Palmetto, aminoácidos sulfurados, mijo, zinc, selenio y biotina, y añade un perfil antioxidante y sistémico más completo con resveratrol de alta concentración, astaxantina de alga Haematococcus pluvialis, coenzima Q10, vitamina D y vitamina K. Está formulado para quienes quieren ir un paso más allá dentro de una estrategia integral de salud capilar, especialmente aquellos que ya siguen un protocolo médico activo y buscan el soporte nutricional más completo posible.<br/><br/></p>",
+            "page": "",
+            "open_by_default": false,
+            "show_product_description": false
+          }
+        },
+        "collapsible_tab_EBKNVc": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Qué lo hace diferente",
+            "icon": "star",
+            "content": "<p><br/><strong>Revistem Hair Forte</strong> amplía la fórmula base con activos orientados específicamente al soporte antioxidante profundo y a la función celular. El resveratrol está presente a 102 mg de extracto de Polygonum cuspidatum estandarizado al 98%, lo que equivale a aproximadamente 100 mg de resveratrol puro por dosis. La astaxantina proviene de oleorresina de alga Haematococcus pluvialis al 5%, aportando 4 mg por dosis, una de las concentraciones más altas disponibles en formulaciones orales. La coenzima Q10 a 20 mg completa el eje antioxidante mitocondrial. Además incorpora vitamina D a 50 µg y vitamina K a 100 µg, dos activos con papel sistémico relevante que no están presentes en la fórmula estándar. El resultado es una fórmula más completa, pensada para un compromiso a largo plazo con la salud capilar desde todos los ángulos posibles.<br/><br/></p>",
+            "page": "",
+            "open_by_default": false,
+            "show_product_description": false
+          }
+        },
+        "collapsible_tab_Adeqcw": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredientes principales",
+            "icon": "pepper",
+            "content": "<p><strong>NAC — 399 mg</strong><br/>N-Acetil-L-Cisteína, precursor del glutatión y fuente de cisteína para la síntesis de queratina. Presente a 399 mg en el Forte, complementado por el perfil antioxidante ampliado del resto de la fórmula.</p><p><strong>Saw Palmetto — 320 mg (45% ácidos grasos · 144 mg)</strong><br/>Extracto de Serenoa repens estandarizado al 45% en ácidos grasos activos. Mismo nivel que en Revistem Hair, manteniendo la base vegetal de referencia en fórmulas capilares.</p><p><strong>Resveratrol — 102 mg de extracto (98% · ~100 mg resveratrol)</strong><br/>Extracto seco de Polygonum cuspidatum estandarizado al 98% en resveratrol. Polifenol con actividad antioxidante documentada, incluido en la fórmula Forte como parte del eje antioxidante ampliado.</p><p><strong>Astaxantina — 4 mg (de 60 mg de oleorresina al 5%)</strong><br/>Carotenoide de origen natural procedente de alga Haematococcus pluvialis. Considerado uno de los antioxidantes liposolubles más potentes disponibles, con una capacidad antioxidante significativamente superior a la del betacaroteno o la vitamina E.</p><p><strong>Coenzima Q10 — 20 mg</strong><br/>Activo con papel en la función mitocondrial y en la cadena de transporte de electrones. Presente en la fórmula Forte como parte del soporte antioxidante a nivel celular.</p><p><strong>Vitamina E — 150 mg α-TE (1250% VRN)</strong><br/>Antioxidante liposoluble que contribuye a la protección de las células frente al daño oxidativo. Mismo nivel que en la fórmula estándar.</p><p><strong>L-Cistina — 150 mg · L-Metionina — 150 mg</strong><br/>Aminoácidos sulfurados esenciales para la síntesis de queratina. Forman junto con el NAC el eje aminoacídico estructural de ambas fórmulas Revistem.</p><p><strong>Vitamina D — 50 µg</strong><br/>Activo sistémico con receptores presentes en el folículo capilar. Exclusivo de la fórmula Forte.</p><p><strong>Vitamina K — 100 µg</strong><br/>Vitamina K2 en forma de menaquinona. Incluida en la fórmula Forte por su papel sistémico complementario a la vitamina D.</p><p><strong>Zinc — 15 mg (150% VRN) · Selenio — 55 µg (100% VRN) · Biotina — 2000 µg (4000% VRN)</strong><br/>Los tres activos con claim EFSA aprobado para el mantenimiento del cabello en condiciones normales. Presentes a las mismas dosis que en Revistem Hair.</p>",
+            "page": "",
+            "open_by_default": false,
+            "show_product_description": false
+          }
+        },
+        "collapsible_tab_K8PCaK": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Beneficios/ información nutricional",
+            "icon": "heart",
+            "content": "<p><br/>El zinc, el selenio y la biotina tienen claims nutricionales autorizados por la EFSA para el mantenimiento del cabello en condiciones normales. La vitamina C y la vitamina E contribuyen a la protección de las células frente al daño oxidativo. La vitamina D contribuye al funcionamiento normal del sistema inmunitario. La vitamina K contribuye al mantenimiento de los huesos en condiciones normales. El resto de ingredientes de la fórmula se incluyen por su papel dentro del perfil nutricional global sin claims específicos autorizados en la normativa europea vigente.<br/><br/></p>",
+            "page": "",
+            "open_by_default": false,
+            "show_product_description": false
+          }
+        },
+        "collapsible_tab_tN7hJQ": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cómo tomarlo",
+            "icon": "check_mark",
+            "content": "<p><br/>Dosis diaria recomendada: 3 cápsulas al día, preferiblemente con las comidas. Cada envase contiene 90 cápsulas, suministro para 30 días. Se recomienda un uso continuado de al menos 3 meses para acompañar los ciclos naturales del crecimiento capilar.<br/><br/></p>",
+            "page": "",
+            "open_by_default": false,
+            "show_product_description": false
+          }
+        },
+        "collapsible_tab_kzPLfE": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredientes completos",
+            "icon": "clipboard",
+            "content": "<p><br/>N-Acetil-L-Cisteína (NAC), cápsula (agente de recubrimiento: hidroxipropilmetilcelulosa, colorante: óxido de hierro), extracto seco de fruto de Saw Palmetto (Serenoa repens, 45% ácidos grasos), DL-alfa tocoferol (Vitamina E), extracto seco de mijo (Panicum miliaceum L., fruto-semilla), L-Cistina, L-Metionina, agente de carga (celulosa microcristalina), extracto seco de Polygonum cuspidatum (98% resveratrol), oleorresina rica en astaxantina de alga Haematococcus pluvialis (5% astaxantina), ácido L-ascórbico (Vitamina C), bisglicinato de zinc, coenzima Q10, antiaglomerante (sales magnésicas de ácidos grasos), L-seleniometionina, D-biotina (Biotina), menaquinona (Vitamina K), colecalciferol (Vitamina D).<br/><br/></p>",
+            "page": "",
+            "open_by_default": false,
+            "show_product_description": false
+          }
+        },
+        "collapsible_tab_RybkgE": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Advertencias",
+            "icon": "eye",
+            "content": "<p><br/>No superar la dosis diaria recomendada. Los complementos alimenticios no sustituyen una dieta equilibrada ni un tratamiento médico. Conservar en lugar fresco, seco y protegido de la luz solar. Mantener fuera del alcance de los niños. No debe ser consumido por lactantes ni niños menores de 10 años. Producto para uso en adultos. Desaconsejado en mujeres embarazadas o en periodo de lactancia. Consulta con tu médico antes de usar si estás bajo tratamiento farmacológico.<br/><br/></p>",
+            "page": "",
+            "open_by_default": false,
+            "show_product_description": false
+          }
+        },
+        "icon_with_text_XwWjGC": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Envío en 24-48h",
+            "icon_2": "map_pin",
+            "heading_2": "Fabricado en España",
+            "icon_3": "ruler",
+            "heading_3": "Dosis clínicamente Relevantes"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_preview_badge_4RGF7L",
+        "breadcrumbs_tr4UFi",
+        "review_mMj4kD",
+        "title_Fnnnm3",
+        "price",
+        "trust_feature_xnRc3U",
+        "inventory_4fpVhP",
+        "description_kzKRHC",
+        "buy_buttons",
+        "shipping_CGrYT3",
+        "collapsible_tab_ptCdTk",
+        "collapsible_tab_EBKNVc",
+        "collapsible_tab_Adeqcw",
+        "collapsible_tab_K8PCaK",
+        "collapsible_tab_tN7hJQ",
+        "collapsible_tab_kzPLfE",
+        "collapsible_tab_RybkgE",
+        "icon_with_text_XwWjGC"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_info": true,
+        "no_scroll": false,
+        "show_feature_image_first": true,
+        "color_scheme": "background-1",
+        "block_padding": 1.5,
+        "media_size": "medium",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "hide_slider_buttons": false,
+        "thumbnail_layout": "medium",
+        "thumbnail_size": 54,
+        "thumbnail_radius": 0,
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "variant_image_filtering": "none",
+        "filtering_products": [],
+        "mobile_thumbnails": "show",
+        "mobile_slider_height": "adapt",
+        "show_full_image": true,
+        "first_image_size": 100,
+        "second_image_size": 0,
+        "show_container": false,
+        "container_bg": "#ffffff",
+        "container_radius": 10,
+        "container_padding": 20,
+        "container_border_color": "#f1f1f1",
+        "show_container_mb": false,
+        "container_bg_mb": "#ffffff",
+        "container_padding_mb": 20,
+        "container_radius_mb": 8,
+        "container_border_color_mb": "#f1f1f1",
+        "container_text": "",
+        "container_text_size": 16,
+        "container_text_bg": "#212121",
+        "container_text_txt": "#ffffff",
+        "container_text_animation": true,
+        "container_text_speed": 20,
+        "padding_top": 40,
+        "padding_top_mb": 0,
+        "padding_bottom": 64
+      }
+    },
+    "17743559751c13c9aa": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_kqFXYi": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_kqFXYi"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "lumin_review_Bn3WBa": {
+      "type": "Lumin-review",
+      "blocks": {
+        "rating_summary_qEK7E8": {
+          "type": "rating_summary",
+          "settings": {
+            "rating_summary_score": "4.8",
+            "rating_summary_total": "731 Reviews",
+            "rating_bar_5_width": 85,
+            "rating_bar_5_count": "624",
+            "rating_bar_4_width": 14,
+            "rating_bar_4_count": "104",
+            "rating_bar_3_width": 1,
+            "rating_bar_3_count": "3",
+            "rating_bar_2_width": 0,
+            "rating_bar_2_count": "0",
+            "rating_bar_1_width": 0,
+            "rating_bar_1_count": "0",
+            "rating_summary_border_radius": 0,
+            "rating_summary_bg": "#fafafa",
+            "rating_summary_score_color": "#333333",
+            "rating_summary_text_color": "#666666",
+            "rating_bar_bg": "#e5e5e5",
+            "rating_bar_fill": "#333333",
+            "rating_summary_border_color": "#dddddd"
+          }
+        },
+        "review_ramNVA": {
+          "type": "review",
+          "settings": {
+            "selected_product": "",
+            "star_rating": 5,
+            "name_text": "Sofia R.",
+            "country_code": "US",
+            "show_country_flag": true,
+            "date_text": "June 2025",
+            "review_head": "Effective on coarser hair",
+            "review_text": "The Olivia skin Satin Shave is a fantastic electric shaver. It's gentle on the skin and provides a close shave. I use it for my bikini area, and it doesn't cause any irritation. The built-in trimmer is a nice addition too. The only reason I didn't give it five stars is because it's not as effective on coarser hair.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_pcUEPe": {
+          "type": "review",
+          "settings": {
+            "selected_product": "",
+            "star_rating": 5,
+            "name_text": "Johan D.",
+            "country_code": "US",
+            "show_country_flag": true,
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_C8YwWK": {
+          "type": "review",
+          "settings": {
+            "selected_product": "",
+            "star_rating": 5,
+            "name_text": "Marta S.",
+            "country_code": "US",
+            "show_country_flag": true,
+            "date_text": "June 2025",
+            "review_head": "Highly recommended!",
+            "review_text": "I've been using the Rubo SmoothSkin Ultra for a few months now, and the results are incredible. The device is easy to use and painless, and I've seen a significant reduction in hair growth. Not having to worry about shaving or waxing anymore has been a game-changer. Highly recommended!",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_yGBJ8d": {
+          "type": "review",
+          "settings": {
+            "selected_product": "",
+            "star_rating": 5,
+            "name_text": "Johan D.",
+            "country_code": "US",
+            "show_country_flag": true,
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_r9cXTw": {
+          "type": "review",
+          "settings": {
+            "selected_product": "",
+            "star_rating": 5,
+            "name_text": "Johan D.",
+            "country_code": "US",
+            "show_country_flag": true,
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_igrMPx": {
+          "type": "review",
+          "settings": {
+            "selected_product": "",
+            "star_rating": 5,
+            "name_text": "Johan D.",
+            "country_code": "US",
+            "show_country_flag": true,
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        },
+        "review_zJfx6A": {
+          "type": "review",
+          "settings": {
+            "selected_product": "",
+            "star_rating": 5,
+            "name_text": "Johan D.",
+            "country_code": "US",
+            "show_country_flag": true,
+            "date_text": "June 2024",
+            "review_head": "Nice Product",
+            "review_text": "Nice Product. I'm happy with my purchase.",
+            "like_size": 0,
+            "dislike_size": 0,
+            "feature_font_size": 16
+          }
+        }
+      },
+      "block_order": [
+        "rating_summary_qEK7E8",
+        "review_ramNVA",
+        "review_pcUEPe",
+        "review_C8YwWK",
+        "review_yGBJ8d",
+        "review_r9cXTw",
+        "review_igrMPx",
+        "review_zJfx6A"
+      ],
+      "disabled": true,
+      "name": "Lumin Review",
+      "settings": {
+        "editing": true,
+        "color_scheme": "background-1",
+        "header_text": "what our customers say about us",
+        "show_top": true,
+        "rating_text": "4.8",
+        "rating_range": 4.5,
+        "star_size_top": 1,
+        "rating_count": "Based on 16 Reviews",
+        "show_customer_images": true,
+        "show_country_flags": true,
+        "customer_image_size": 40,
+        "customer_image_radius": 30,
+        "customer_initials_bg": "#c5d6d6",
+        "customer_initials_color": "#000000",
+        "review_column_mobile": 1,
+        "review_column_tab": 2,
+        "review_column_desk": 3,
+        "review_load": 6,
+        "load_text": "Load More",
+        "rw_img_size": 140,
+        "rw_img_radius": 6,
+        "block_name_size": 32,
+        "date_size": 12,
+        "block_head_size": 20,
+        "block_text_size": 13,
+        "star_style": "star",
+        "star_size": 0.6,
+        "star_radius": 0,
+        "feature_svg_color": "#000000",
+        "inactive_star_color": "#e2e2e2",
+        "show_border": false,
+        "rw_border": "#f1f1f1",
+        "border_radius": 0,
+        "section_bg3": "#bf570a",
+        "section_bg2": "#bf570a",
+        "verify_text": "Verified Buyer",
+        "review_bg": "#f9f9f9",
+        "feature_acc_color": "#008763",
+        "review_pd": 20,
+        "review_pd_m": 20,
+        "show_footer": true,
+        "show_product": true,
+        "product_image_radius": 4,
+        "like_text": "Was this helpful?",
+        "show_add_review_button": true,
+        "review_cta_heading": "Review this product",
+        "review_cta_subtext": "Share your thoughts with other customers",
+        "add_review_button_text": "Add Your Review",
+        "review_cta_heading_color": "#333333",
+        "review_cta_subtext_color": "#666666",
+        "add_review_button_bg": "#000000",
+        "add_review_button_text_color": "#ffffff",
+        "modal_title": "Write Your Review",
+        "name_label": "Your Name",
+        "rating_label": "Rating",
+        "title_label": "Review Title",
+        "review_label": "Your Review",
+        "email_label": "Your Email",
+        "date_format": "detailed",
+        "cancel_button_text": "Cancel",
+        "submit_button_text": "Submit Review",
+        "success_message_title": "Thank you for your review!",
+        "success_message_body": "Your review has been submitted successfully and will be forwarded to our team.",
+        "success_message_duration": "3",
+        "success_message_bg": "#4caf50",
+        "success_message_text": "#ffffff",
+        "success_message_position": "top-right",
+        "success_message_font_size": 16,
+        "success_message_show_icon": true,
+        "email_subject": "New Review Submitted",
+        "email_method": "real_form",
+        "rw_margin": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "enable_review_popup": true,
+        "popup_helpful_text": "Was this helpful?",
+        "show_popup_helpful_buttons": true,
+        "show_popup_product_info": true,
+        "popup_image_quality": "800",
+        "popup_customer_image_size": 60,
+        "enable_image_enlarge": true
+      }
+    },
+    "rich_text_Wt37pn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iRHqkj": {
+          "type": "heading",
+          "settings": {
+            "heading": "¿Por qué Revistem Hair Forte?",
+            "heading_size": "h1"
+          }
+        },
+        "text_prqLbN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Revistem Hair Forte destaca por su fórmula avanzada, que va más allá de los suplementos capilares básicos. Con una mezcla mejorada de antioxidantes, vitaminas y nutrientes esenciales, cuida tu cabello desde el interior.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iRHqkj",
+        "text_prqLbN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "lumin_grids_eLUeVE": {
+      "type": "lumin-grids",
+      "blocks": {
+        "image_4myJCi": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "33.3333333",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "image": "shopify://shop_images/Gemini_Generated_Image_mop9djmop9djmop9.png",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "opacity_color_full": false,
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "text_border": 0,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        },
+        "text_Pmkpka": {
+          "type": "text",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "33.3333333",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "show_border": true,
+            "border_color": "#eeeeee",
+            "padding_size": 30,
+            "padding_size_mobile": 30,
+            "padding_left_mobile": 30,
+            "text_border": 0,
+            "bg_color": "#ffffff",
+            "icon_size": 25,
+            "icon_corner": 0,
+            "head": "La base, más una capa antioxidante completa",
+            "use_body_font": false,
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "subtitle": "<p>Revistem Hair Forte no es un producto distinto a Revistem Hair. Es la misma arquitectura nutricional con un nivel adicional de soporte antioxidante y sistémico. Saw Palmetto, aminoácidos sulfurados, NAC, mijo, zinc, selenio y biotina se complementan aquí con resveratrol de alta concentración, astaxantina de alga y coenzima Q10. Una fórmula pensada para quien quiere cubrirlo todo.</p><p></p><p><em><strong>Para quien ya tiene un protocolo activo</strong></em><br/>Si usas finasterida, dutasterida o minoxidil, ya estás actuando sobre la señalización hormonal. Revistem Hair Forte está diseñado para el siguiente nivel: reducir el estrés oxidativo folicular, apoyar la función mitocondrial celular con CoQ10 y cubrir las vitaminas que la mayoría de protocolos capilares ignoran, la D y la K. Todo en una sola toma diaria.</p><p><em><strong>Constancia sin complicaciones</strong></em><br/>Tres cápsulas al día con las comidas. El mismo formato que Revistem Hair, la misma facilidad de integración en cualquier rutina. Sin cambios en tu protocolo actual, sin interacciones conocidas con los tratamientos habituales para la alopecia androgenética.<br/><br/><br/><br/><br/><br/></p>",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "",
+            "show_secondary": false,
+            "button_link": "",
+            "image_content_position": "middle-center",
+            "desktop_content_alignment": "left",
+            "grid-url": ""
+          }
+        },
+        "image_Vyy3mW": {
+          "type": "image",
+          "settings": {
+            "large_up_hide": false,
+            "grid_width_desktop": "33.3333333",
+            "medium_hide": false,
+            "grid_width_tablet": "33.3333333",
+            "small_hide": false,
+            "image": "shopify://shop_images/Gemini_Generated_Image_4logp4logp4logp4.png",
+            "overlay_opacity": 0,
+            "opacity_color": "#000000",
+            "opacity_color_full": false,
+            "padding_size": 30,
+            "padding_size_in": 10,
+            "text_border": 0,
+            "bg_color": "rgba(0,0,0,0)",
+            "head": "",
+            "head_color": "#212121",
+            "head_size_d": 30,
+            "head_size_m": 24,
+            "margin_bottom": 15,
+            "text": "",
+            "text_color": "#212121",
+            "text_size_d": 16,
+            "text_size_m": 14,
+            "button-text": "",
+            "button_link": "",
+            "desktop_content_alignment": "center",
+            "image_content_position": "bottom-center",
+            "grid-url": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_4myJCi",
+        "text_Pmkpka",
+        "image_Vyy3mW"
+      ],
+      "disabled": true,
+      "name": "Lumin Grids",
+      "settings": {
+        "video_border": 6,
+        "zoom_hover": true,
+        "loading_color": "#f2f2f2",
+        "grid_gap": 8,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 36,
+        "margin_bottom": 36
+      }
+    },
+    "multirow_aPkWWG": {
+      "type": "multirow",
+      "blocks": {
+        "row_dpapyy": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_4logp4logp4logp4.png",
+            "caption": "REVISTEM HAIR FORTE",
+            "heading": "La base, más una capa antioxidante completa",
+            "text": "<p>Revistem Hair Forte no es un producto distinto a Revistem Hair. Es la misma arquitectura nutricional con un nivel adicional de soporte antioxidante y sistémico. Saw Palmetto, aminoácidos sulfurados, NAC, mijo, zinc, selenio y biotina se complementan aquí con resveratrol de alta concentración, astaxantina de alga y coenzima Q10. Una fórmula pensada para quien quiere cubrirlo todo.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_QMKfea": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_mop9djmop9djmop9.png",
+            "caption": "REVISTEM HAIR FORTE",
+            "heading": "Para quien ya tiene un protocolo activo",
+            "text": "<p>Si usas finasterida, dutasterida o minoxidil, ya estás actuando sobre la señalización hormonal. Revistem Hair Forte está diseñado para el siguiente nivel: reducir el estrés oxidativo folicular, apoyar la función mitocondrial celular con CoQ10 y cubrir las vitaminas que la mayoría de protocolos capilares ignoran, la D y la K. Todo en una sola toma diaria.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_QwUBzN": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_syeiq3syeiq3syei.png",
+            "caption": "REVISTEM HAIR FORTE",
+            "heading": "Constancia sin complicaciones",
+            "text": "<p>Tres cápsulas al día con las comidas. El mismo formato que Revistem Hair, la misma facilidad de integración en cualquier rutina. Sin cambios en tu protocolo actual, sin interacciones conocidas con los tratamientos habituales para la alopecia androgenética.<br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_dpapyy",
+        "row_QMKfea",
+        "row_QwUBzN"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "lumin_hero_axhMiF": {
+      "type": "lumin-hero",
+      "blocks": {
+        "hero_VEVfYm": {
+          "type": "hero",
+          "disabled": true,
+          "settings": {
+            "use_video": false,
+            "main_image_width": 290,
+            "show_1": true,
+            "head_1": "Soporte antioxidante mejorado",
+            "text_1": "Revistem Hair Forte incluye una capa adicional de apoyo antioxidante, que ayuda a proteger el cabello del estrés diario y de los factores ambientales.",
+            "show_2": true,
+            "head_2": "Fórmula integral",
+            "text_2": "Su fórmula va más allá de los suplementos capilares convencionales, ya que combina nutrientes esenciales con elementos de apoyo adicionales.",
+            "show_3": true,
+            "head_3": "Diseñado para obtener resultados a largo plazo.",
+            "text_3": "La salud del cabello es un proceso gradual, y Revistem Hair Forte está diseñado pensando en la consistencia a largo plazo.",
+            "show_4": true,
+            "head_4": "Fácil de integrar diariamente",
+            "text_4": "Con una ingesta diaria de tres cápsulas, se integra perfectamente en tu rutina y puede combinarse con otras estrategias de cuidado capilar cuando sea necesario.",
+            "show_5": false,
+            "head_5": "Heading",
+            "text_5": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines.",
+            "show_6": false,
+            "head_6": "Heading",
+            "text_6": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines."
+          }
+        }
+      },
+      "block_order": [
+        "hero_VEVfYm"
+      ],
+      "disabled": true,
+      "name": "Lumin Hero",
+      "settings": {
+        "color_scheme": "",
+        "color_scheme_2": "",
+        "title": "Cuidado avanzado para un cabello más fuerte y saludable.",
+        "heading_size": "h1",
+        "column_alignment": "center",
+        "column_alignment_dt": "center",
+        "column_alignment_mb": "center",
+        "head_text": "Revistem Hair Forte está diseñado para quienes desean ir más allá de lo básico y adoptar un enfoque más avanzado para la salud de su cabello. Su fórmula nutricional sólida incorpora antioxidantes y un apoyo sistémico mejorado para proteger y fortalecer el cabello desde el interior.",
+        "feature_image": 60,
+        "feature_image_mb": 40,
+        "gap_section_top": 20,
+        "gap_section_bottom": 20,
+        "pad_section_top": 20,
+        "pad_section_bottom": 20
+      }
+    },
+    "lumin_hero_hbJDcW": {
+      "type": "lumin-hero",
+      "blocks": {
+        "hero_AegTw8": {
+          "type": "hero",
+          "settings": {
+            "image": "shopify://shop_images/Gray_and_Black_Minimalist_Digital_Mockup_Facebook_Post_9.png",
+            "use_video": false,
+            "main_image_width": 600,
+            "show_1": true,
+            "image_1": "shopify://shop_images/Saw_Palmetto.png",
+            "head_1": "<strong>Saw Palmetto</strong>",
+            "text_1": "320 mg · 45% ácidos grasos activos. El extracto vegetal más estudiado en salud capilar masculina, estandarizado para garantizar la fracción activa real.",
+            "show_2": true,
+            "image_2": "shopify://shop_images/Resveratrol.png",
+            "head_2": "<strong>Resveratrol</strong>",
+            "text_2": "~100 mg de extracto de Polygonum cuspidatum al 98%. Polifenol antioxidante de alta concentración para un soporte sistémico que va más allá del folículo.",
+            "show_3": true,
+            "image_3": "shopify://shop_images/Astaxantina.png",
+            "head_3": "<strong>Astaxantina</strong>",
+            "text_3": "4 mg de oleorresina de alga Haematococcus pluvialis. Uno de los antioxidantes liposolubles más potentes disponibles, exclusivo de la fórmula Forte.",
+            "show_4": true,
+            "image_4": "shopify://shop_images/Coenzima_Q10.png",
+            "head_4": "<strong>Coenzima Q10</strong>",
+            "text_4": "20 mg por dosis diaria. Soporte antioxidante a nivel mitocondrial, complementando el eje antioxidante completo de la fórmula Forte.",
+            "show_5": false,
+            "head_5": "<strong>Biotina</strong>",
+            "text_5": "Contribuye al mantenimiento del cabello en condiciones normales.",
+            "show_6": false,
+            "head_6": "Heading",
+            "text_6": "Some descriptive text for your collection. For better alignment, it is better to use text in several lines."
+          }
+        }
+      },
+      "block_order": [
+        "hero_AegTw8"
+      ],
+      "name": "Lumin Hero",
+      "settings": {
+        "color_scheme": "",
+        "color_scheme_2": "",
+        "title": "Ingredientes clave",
+        "heading_size": "h1",
+        "column_alignment": "center",
+        "column_alignment_dt": "center",
+        "column_alignment_mb": "center",
+        "head_text": "Revistem Hair Forte",
+        "feature_image": 60,
+        "feature_image_mb": 40,
+        "gap_section_top": 20,
+        "gap_section_bottom": 20,
+        "pad_section_top": 20,
+        "pad_section_bottom": 20
+      }
+    },
+    "before_after_7NYTma": {
+      "type": "before-after",
+      "blocks": {
+        "text_VKJkqf": {
+          "type": "text",
+          "settings": {
+            "subheading": "",
+            "heading": "Antes y Después",
+            "heading_tag": "h2",
+            "heading_size": 32,
+            "content": "",
+            "text_position": "center",
+            "color": "#000000"
+          }
+        },
+        "images_LcH4CK": {
+          "type": "images",
+          "settings": {
+            "before_image": "shopify://shop_images/Gemini_Generated_Image_bb2y7kbb2y7kbb2y.png",
+            "after_image": "shopify://shop_images/Gemini_Generated_Image_5n90pn5n90pn5n90.png",
+            "desktop_height": 500,
+            "mobile_height": 500,
+            "border_radius": 12,
+            "drag_initial_position": 50,
+            "cover": true,
+            "before_text": "Antes",
+            "after_text": "Después",
+            "before_after_text_position": "bottom",
+            "before_text_color": "#ffffff",
+            "after_text_color": "#ffffff",
+            "drag_cursor_bg": "#ffffff",
+            "drag_cursor_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_VKJkqf",
+        "images_LcH4CK"
+      ],
+      "disabled": true,
+      "name": "Before & After",
+      "settings": {
+        "background_color": "rgba(0,0,0,0)",
+        "background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "Te puede interesar",
+        "heading_size": "h2",
+        "products_to_show": 2,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-6d40021f-e55e-49ec-a8a3-6a2fa5087120",
+        "image_ratio": "adapt",
+        "image_no_crop": false,
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "show_scroll_tags": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "blocks_gUg7JV": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_99f86a6_zTTxMC": {
+          "type": "ai_gen_block_99f86a6",
+          "settings": {
+            "desktop_width_percent": 100,
+            "section_padding_vertical": 40,
+            "section_padding_horizontal": 20,
+            "item_spacing": 60,
+            "mobile_padding_vertical": 30,
+            "mobile_padding_horizontal": 20,
+            "mobile_item_spacing": 40,
+            "show_dividers": true,
+            "divider_color": "#000000",
+            "divider_opacity": 10,
+            "divider_height": 60,
+            "icon_size": 32,
+            "mobile_icon_size": 28,
+            "icon_color": "#000000",
+            "icon_stroke_width": 1.5,
+            "icon_text_spacing": 16,
+            "title_size": 13,
+            "mobile_title_size": 12,
+            "title_weight": "500",
+            "title_transform": "none",
+            "title_letter_spacing": 0.5,
+            "title_color": "#000000",
+            "title_description_spacing": 6,
+            "description_size": 11,
+            "mobile_description_size": 10,
+            "description_letter_spacing": 0.3,
+            "description_color": "#000000",
+            "description_opacity": 60,
+            "badge_1_enabled": true,
+            "badge_1_icon": "spain",
+            "badge_1_title": "Fabricado en España",
+            "badge_1_description": "Producción local controlada",
+            "badge_2_enabled": true,
+            "badge_2_icon": "shipping",
+            "badge_2_title": "Envío 24–48h",
+            "badge_2_description": "Gratis desde 69€",
+            "badge_3_enabled": true,
+            "badge_3_icon": "leaf",
+            "badge_3_title": "Ingredientes premium",
+            "badge_3_description": "Sin rellenos ni aditivos",
+            "badge_4_enabled": true,
+            "badge_4_icon": "flask",
+            "badge_4_title": "Fórmula clínica",
+            "badge_4_description": "Respaldada por ciencia"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_99f86a6_zTTxMC"
+      ],
+      "name": "Trust badges",
+      "settings": {}
+    },
+    "collapsible_content_JVrqWp": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_9c6xx7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Quédiferencia hay entre Revistem Hair y Revistem Hair Forte?",
+            "icon": "none",
+            "row_content": "<p>Revistem Hair es la fórmula base de soporte<br/>capilar. Está pensada para acompañar una estrategia de salud capilar seria con<br/>una combinación sólida de aminoácidos, extractos vegetales, vitaminas y<br/>minerales.</p><p>Revistem Hair Forte parte de esa misma base,<br/>pero añade una capa extra de soporte antioxidante y sistémico, con una<br/>formulación más completa para quienes quieren ir un paso más allá.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9kQzD8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Sustituyea la medicación para la alopecia?",
+            "icon": "none",
+            "row_content": "<p>No.<br/>Revistem no está planteado para sustituir la medicación cuando esta está<br/>indicada. Su papel es complementar una estrategia de salud capilar bien<br/>estructurada y aportar soporte nutricional y antioxidante.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qwQVgd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Puedotomarlo si ya uso finasteride, dutasteride o minoxidil?",
+            "icon": "none",
+            "row_content": "<p>En<br/>muchos casos sí, porque Revistem está concebido como complemento y no como<br/>sustituto. Aun así, si estás siguiendo un tratamiento o tienes dudas sobre tu<br/>caso concreto, lo más prudente es consultarlo con un profesional sanitario.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CKdHfQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Encuánto tiempo se puede notar algo?",
+            "icon": "none",
+            "row_content": "<p>El cabello sigue ciclos largos y los cambios<br/>no suelen ser inmediatos. La constancia es clave. En este tipo de productos, la<br/>valoración debe hacerse a medio plazo y siempre dentro de un enfoque global de<br/>salud capilar.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_CK6JnN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuáldebería elegir: Hair o Hair Forte?",
+            "icon": "none",
+            "row_content": "<p>Revistem Hair encaja mejor en quien busca una<br/>fórmula capilar bien planteada, limpia y sólida.</p><p>Revistem Hair Forte está pensado para quien<br/>busca una formulación más avanzada, con un soporte antioxidante y sistémico<br/>ampliado.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_96H3iX": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómose toma?",
+            "icon": "none",
+            "row_content": "<p>La<br/>dosis diaria recomendada es de 3 cápsulas al día. Se recomienda tomarlas con<br/>comida.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_gVcnnE": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuántodura cada envase?",
+            "icon": "none",
+            "row_content": "<p>Cada<br/>envase está pensado para 30 días de uso, siguiendo la dosis diaria recomendada<br/>de 3 cápsulas.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XH4C4C": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Sepuede tomar durante el embarazo o la lactancia?",
+            "icon": "none",
+            "row_content": "<p>No.<br/>Está desaconsejado durante el embarazo y la lactancia.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_9c6xx7",
+        "collapsible_row_9kQzD8",
+        "collapsible_row_qwQVgd",
+        "collapsible_row_CKdHfQ",
+        "collapsible_row_CK6JnN",
+        "collapsible_row_96H3iX",
+        "collapsible_row_gVcnnE",
+        "collapsible_row_XH4C4C"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "Preguntas frecuentes",
+        "heading": "FAQ",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "scheme-bf7e652d-223a-45bd-a4dc-176ed319db91",
+        "container_color_scheme": "background-1",
+        "open_first_collapsible_row": true,
+        "image_ratio": "large",
+        "desktop_layout": "image_second",
+        "padding_top": 44,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_Kxzcjb",
+    "main",
+    "17743559751c13c9aa",
+    "lumin_review_Bn3WBa",
+    "rich_text_Wt37pn",
+    "lumin_grids_eLUeVE",
+    "multirow_aPkWWG",
+    "lumin_hero_axhMiF",
+    "lumin_hero_hbJDcW",
+    "before_after_7NYTma",
+    "related-products",
+    "blocks_gUg7JV",
+    "collapsible_content_JVrqWp"
+  ]
+}
