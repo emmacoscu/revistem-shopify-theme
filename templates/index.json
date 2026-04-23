@@ -61,43 +61,6 @@
         "accessibility_info": "Presentación de diapositivas sobre tu marca"
       }
     },
-    "countdown_timer_t9GjmT": {
-      "type": "countdown-timer",
-      "disabled": true,
-      "name": "Countdown Timer",
-      "settings": {
-        "color_scheme": "accent-1",
-        "layout": "full_bleed",
-        "max_width": 600,
-        "show_border": false,
-        "timer_border": "#eeeeee",
-        "video_border": 0,
-        "message_main": "<p>La oferta finaliza en:</p>",
-        "timer_text_size": 15,
-        "timer_text_size_mb": 14,
-        "text_layout": "left",
-        "text_layout_mb": "center",
-        "date": "2026-12-31",
-        "number_size": "small",
-        "font_style": "normal",
-        "timer_size": 1,
-        "timer_size_mb": 0.8,
-        "timer_days": "",
-        "hide_days": true,
-        "timer_hrs": "",
-        "timer_min": "",
-        "timer_sec": "",
-        "head_font": false,
-        "timer_color": "#212121",
-        "timer_bg": "#ffffff",
-        "message": "<p>Sale is end!</p>",
-        "message_size": 20,
-        "padding_top": 8,
-        "padding_bottom": 8,
-        "margin_top": 0,
-        "margin_bottom": 0
-      }
-    },
     "custom_liquid_HYAyjL": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -113,9 +76,9 @@
       "custom_css": [],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "title": "Productos Revistem",
+        "title": "La línea Revistem",
         "heading_size": "h1",
-        "description": "",
+        "description": "<p>Suplementación capilar formulada desde la evidencia, con dosis que importan y compatibilidad real con los tratamientos médicos habituales para la alopecia. Elige por dónde empiezas.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "frontpage",
@@ -139,7 +102,7 @@
         "show_secondary_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 40,
+        "padding_top": 36,
         "padding_bottom": 16
       }
     },
@@ -729,7 +692,6 @@
   },
   "order": [
     "slideshow_iabDhC",
-    "countdown_timer_t9GjmT",
     "custom_liquid_HYAyjL",
     "featured_collection_rcbPLF",
     "1776765978ac165964",
