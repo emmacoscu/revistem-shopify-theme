@@ -285,7 +285,7 @@
       "settings": {
         "color_scheme_main": "",
         "full-width": true,
-        "image": "shopify://shop_images/Gray_and_Black_Minimalist_Digital_Mockup_Facebook_Post_3_03ec4cc0-3599-4222-b920-374ffa13aac9.png",
+        "image": "shopify://shop_images/freepik_2833677491.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -296,7 +296,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "margin_top": 16,
-        "margin_bottom": 4,
+        "margin_bottom": 0,
         "padding_top": 0,
         "padding_bottom": 0
       }
@@ -476,15 +476,15 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Gemini_Generated_Image_n8rv3rn8rv3rn8rv.png",
-        "height": "large",
+        "image": "shopify://shop_images/freepik_2839118414.jpg",
+        "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-36a94306-aa7e-4414-831f-3c6ab711150c",
-        "color_scheme": "scheme-36a94306-aa7e-4414-831f-3c6ab711150c",
+        "section_color_scheme": "background-1",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
