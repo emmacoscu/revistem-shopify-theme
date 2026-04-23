@@ -142,7 +142,7 @@
           "type": "text",
           "settings": {
             "large_up_hide": false,
-            "grid_width_desktop": "25",
+            "grid_width_desktop": "33.3333333",
             "medium_hide": false,
             "grid_width_tablet": "33.3333333",
             "small_hide": false,
