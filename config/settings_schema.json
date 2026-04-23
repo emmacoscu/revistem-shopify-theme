@@ -3210,6 +3210,28 @@
         "visible_if": "{{ settings.show_extra_line and settings.cart_type == 'drawer'}}"
       },
       {
+        "type": "number",
+        "id": "free_shipping_threshold",
+        "label": "Free shipping threshold (€)",
+        "default": 69,
+        "info": "Orders above this amount get free shipping",
+        "visible_if": "{{ settings.show_extra_line and settings.cart_type == 'drawer'}}"
+      },
+      {
+        "type": "text",
+        "id": "free_shipping_text",
+        "label": "Free shipping text",
+        "default": "Free",
+        "visible_if": "{{ settings.show_extra_line and settings.cart_type == 'drawer'}}"
+      },
+      {
+        "type": "text",
+        "id": "shipping_cost_text",
+        "label": "Shipping cost text",
+        "default": "3,99 €",
+        "visible_if": "{{ settings.show_extra_line and settings.cart_type == 'drawer'}}"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.lumintheme.cart_drawer.settings.text.header_4",
         "visible_if": "{{ settings.cart_type == 'drawer' }}"

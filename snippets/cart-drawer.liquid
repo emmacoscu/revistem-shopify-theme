@@ -5,115 +5,115 @@
   {% render 'cart-drawer' %}
 {% endcomment %}
 <style>
-         /*  .product-option s {
-            color: {{ settings.drawer_option_price_color }};
-        }*/
+           /*  .product-option s {
+              color: {{ settings.drawer_option_price_color }};
+          }*/
 
-   quantity-popover .quantity:after {
+     quantity-popover .quantity:after {
+        box-shadow: none;
+    }
+      quantity-popover .quantity__button:first-child, quantity-popover .quantity__button:last-child {
+        border:0;
+      }
+      quantity-popover .quantity {
+        background: rgb(var(--color-foreground), 0.05) !important;
+    }
+            .cart-drawer .price s {
+              color: {{ settings.drawer_total_price_color }};
+          }
+          .cart-item__discounted-prices .cart-item__old-price {
+            color: {{ settings.drawer_total_price_color }};
+            opacity: 1;
+    }
+            .cart-drawer .price {
+              line-height: 1.2;
+          }
+              .cart-drawer .cart-item__details {
+                width: auto;
+                grid-column: 2 / 6;
+                display: flex;
+                justify-content: space-between;
+            }
+              cart-remove-button .button {
+                min-height: 1.5rem;
+            }
+            cart-drawer .cart-item__totals {
+              pointer-events: auto !important;
+              align-items: center !important;
+              justify-content: space-between !important;
+              flex-direction: row-reverse;
+              grid-column: 2 / 6;
+              gap: 1rem;
+          }
+            .cart-drawer .cart-item__price-wrapper .cart-item__discounted-prices {
+              display: block;
+              gap: .6rem;
+              flex-wrap: wrap;
+              justify-content: flex-end;
+              align-items: center;
+              line-height: 1.2;
+              margin-bottom: .6rem;
+              flex-direction: row;
+          }
+            .cart-item__name {
+              margin-bottom: .3rem;
+          }
+            .product-option {
+              font-size: 1.2rem;
+              word-break: break-word;
+              line-height: calc(1 + .2 / var(--font-body-scale));
+              color: rgba(var(--color-foreground), 0.6);
+          }
+            .cart-drawer .cart-items td {
+              padding-top: 0rem;
+          }
+            .cart-drawer .cart-item {
+              margin-bottom: 2rem;
+              scrollbar-width: none;
+          }
+            .cart-drawer-items-wrapper {
+              scrollbar-width: none;
+          }
+
+        .cart__checkout-button .svg-wrapper {
+          fill: currentColor;
+          width: 16px;
+          height: 16px;
+      }
+        .cross-price {
+          /*text-decoration: line-through;*/
+          color: {{ settings.drawer_savings }};
+          font-size: {{ settings.total_save_price_font_size }}px !important;
+         /* -webkit-text-decorations-in-effect: line-through;*/
+        }
+        {% if settings.total_price_bold %}
+        .totals__total-value {
+          font-weight: bold;
+        }
+        .cross-price {
+          font-weight: bold;
+        }
+        {% endif %}
+         {% if settings.bold_price %}
+          .cart-drawer .cart-item__totals {
+           font-weight: bold;
+         }
+        {% endif %}
+
+        @media screen and (min-width: 750px) {
+          .cart-items .cart-items__heading--quantity, .cart-item .cart-item__quantity, .cart-item__quantity--info quantity-popover>* {
+              padding-left: 0rem;
+          }
+      }
+    #Details-CartDrawer > .cart__note:after {
       box-shadow: none;
   }
-    quantity-popover .quantity__button:first-child, quantity-popover .quantity__button:last-child {
-      border:0;
-    }
-    quantity-popover .quantity {
-      background: rgb(var(--color-foreground), 0.05) !important;
+    #Details-CartDrawer > .cart__note  {
+      top: 0;
   }
-          .cart-drawer .price s {
-            color: {{ settings.drawer_total_price_color }};
-        }
-        .cart-item__discounted-prices .cart-item__old-price {
-          color: {{ settings.drawer_total_price_color }};
-          opacity: 1;
+    .drawer__footer>details[open] {
+      padding-bottom: 0;
   }
-          .cart-drawer .price {
-            line-height: 1.2;
-        }
-            .cart-drawer .cart-item__details {
-              width: auto;
-              grid-column: 2 / 6;
-              display: flex;
-              justify-content: space-between;
-          }
-            cart-remove-button .button {
-              min-height: 1.5rem;
-          }
-          cart-drawer .cart-item__totals {
-            pointer-events: auto !important;
-            align-items: center !important;
-            justify-content: space-between !important;
-            flex-direction: row-reverse;
-            grid-column: 2 / 6;
-            gap: 1rem;
-        }
-          .cart-drawer .cart-item__price-wrapper .cart-item__discounted-prices {
-            display: block;
-            gap: .6rem;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-            line-height: 1.2;
-            margin-bottom: .6rem;
-            flex-direction: row;
-        }
-          .cart-item__name {
-            margin-bottom: .3rem;
-        }
-          .product-option {
-            font-size: 1.2rem;
-            word-break: break-word;
-            line-height: calc(1 + .2 / var(--font-body-scale));
-            color: rgba(var(--color-foreground), 0.6);
-        }
-          .cart-drawer .cart-items td {
-            padding-top: 0rem;
-        }
-          .cart-drawer .cart-item {
-            margin-bottom: 2rem;
-            scrollbar-width: none;
-        }
-          .cart-drawer-items-wrapper {
-            scrollbar-width: none;
-        }
-
-      .cart__checkout-button .svg-wrapper {
-        fill: currentColor;
-        width: 16px;
-        height: 16px;
-    }
-      .cross-price {
-        /*text-decoration: line-through;*/
-        color: {{ settings.drawer_savings }};
-        font-size: {{ settings.total_save_price_font_size }}px !important;
-       /* -webkit-text-decorations-in-effect: line-through;*/
-      }
-      {% if settings.total_price_bold %}
-      .totals__total-value {
-        font-weight: bold;
-      }
-      .cross-price {
-        font-weight: bold;
-      }
-      {% endif %}
-       {% if settings.bold_price %}
-        .cart-drawer .cart-item__totals {
-         font-weight: bold;
-       }
-      {% endif %}
-
-      @media screen and (min-width: 750px) {
-        .cart-items .cart-items__heading--quantity, .cart-item .cart-item__quantity, .cart-item__quantity--info quantity-popover>* {
-            padding-left: 0rem;
-        }
-    }
-  #Details-CartDrawer > .cart__note:after {
-    box-shadow: none;
-}
-  #Details-CartDrawer > .cart__note  {
-    top: 0;
-}
-  .drawer__footer>details[open] {
-    padding-bottom: 0;
-}
 </style>
 
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
@@ -194,9 +194,9 @@
   </style>
   <script>
     window.cartDiscountStrings = {
-      errorNoCode: "{{ settings.cart_discount_error_no_code | escape }}",
-      errorAlreadyApplied: "{{ settings.cart_discount_error_already_applied | escape }}",
-      errorInvalid: "{{ settings.cart_discount_error_invalid | escape }}"
+      errorNoCode: '{{ settings.cart_discount_error_no_code | escape }}',
+      errorAlreadyApplied: '{{ settings.cart_discount_error_already_applied | escape }}',
+      errorInvalid: '{{ settings.cart_discount_error_invalid | escape }}',
     };
   </script>
   <script src="{{ 'cart-discount-codes-custom.js' | asset_url }}" defer="defer"></script>
@@ -319,7 +319,10 @@
       {%- endif -%}
       <div class="drawer__header" style="padding:0;">
         {% if settings.show_timer and settings.timer_position == 'top' %}
-          <div class="cart-timer {% if settings.timer_text_style == 'uppercase' %} caption-with-letter-spacing{% elsif settings.timer_text_style == 'subtitle' %} subtitle{% endif %}" id="cart-timer"></div>
+          <div
+            class="cart-timer {% if settings.timer_text_style == 'uppercase' %} caption-with-letter-spacing{% elsif settings.timer_text_style == 'subtitle' %} subtitle{% endif %}"
+            id="cart-timer"
+          ></div>
         {% endif %}
         {% if settings.cart_message_below == true %}
           {% if settings.hide_cart_heading == false %}
@@ -383,11 +386,17 @@
         {% endcomment %}
       </div>
       {% if settings.show_timer and settings.timer_position == 'middle' %}
-        <div class="cart-timer {% if settings.timer_text_style == 'uppercase' %} caption-with-letter-spacing{% elsif settings.timer_text_style == 'subtitle' %} subtitle{% endif %}" id="cart-timer"></div>
+        <div
+          class="cart-timer {% if settings.timer_text_style == 'uppercase' %} caption-with-letter-spacing{% elsif settings.timer_text_style == 'subtitle' %} subtitle{% endif %}"
+          id="cart-timer"
+        ></div>
       {% endif %}
       {% render 'cart-progress-bar' %}
       {% if settings.show_timer and settings.timer_position == 'bottom' %}
-        <div class="cart-timer {% if settings.timer_text_style == 'uppercase' %} caption-with-letter-spacing{% elsif settings.timer_text_style == 'subtitle' %} subtitle{% endif %}" id="cart-timer"></div>
+        <div
+          class="cart-timer {% if settings.timer_text_style == 'uppercase' %} caption-with-letter-spacing{% elsif settings.timer_text_style == 'subtitle' %} subtitle{% endif %}"
+          id="cart-timer"
+        ></div>
       {% endif %}
       <button
         class="drawer__close"
@@ -866,12 +875,29 @@
               <p class="cross-price">- {{ total_savings | money }}</p>
             </div>
           {% endif %}
+
           {% if settings.show_extra_line %}
             <div class="totals" role="status">
               <h2 class="totals__total">{{ settings.extra_title }}</h2>
-              <p class="totals__total-value">{{ settings.extra_text }}</p>
+              <p class="totals__total-value">
+                {% assign threshold = settings.free_shipping_threshold | times: 100 %}
+                {% if cart.total_price >= threshold %}
+                  {{ settings.free_shipping_text }}
+                {% else %}
+                  {{ settings.shipping_cost_text }}
+                {% endif %}
+              </p>
             </div>
           {% endif %}
+
+          {% comment %}
+            {% if settings.show_extra_line %}
+              <div class="totals" role="status">
+                <h2 class="totals__total">{{ settings.extra_title }}</h2>
+                <p class="totals__total-value">{{ settings.extra_text }}</p>
+              </div>
+            {% endif %}
+          {% endcomment %}
           <div class="totals{% if settings.hide_total_drawer %} hidden{% endif %}" role="status">
             <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
             <p class="totals__total-value">
@@ -955,8 +981,6 @@
             {{ 'sections.cart.checkout' | t -}}
             {%- if settings.show_checkout_price %} • {{ cart.total_price | money }}{% endif %}
           </button>
-          
-
         </div>
         {%- if settings.show_payment_icons -%}
           {% render 'payment-icons-drawer' %}
@@ -999,220 +1023,220 @@
 {% render 'cart-upsell' %}
 
 {% if settings.show_timer and settings.cart_type == 'drawer' %}
-<script>
-(function() {
-  var TIMER_DURATION = {{settings.countdown_minutes}} * 60; // 10 minutes in seconds
-  var TIMER_KEY = 'cart_timer_expiry';
-  var INTERVAL_KEY = 'cart_timer_interval';
-  var TIMER_CONTAINER_SELECTOR = '.drawer__header';
-  var TIMER_SPAN_ID = 'cart-timer';
-  var observer = null;
-  var lastEmpty = null;
-  var debounceTimeout = null;
-  var MESSAGE_TEXT = '{{ settings.message_text | replace: "'", "\\'" }}';
-  var MESSAGE_TEXT_2 = '{{ settings.message_text_2 | replace: "'", "\\'" }}';
-  var EXPIRED_MESSAGE = '{{ settings.expired_message | replace: "'", "\\'" }}';
+  <script>
+    (function() {
+      var TIMER_DURATION = {{settings.countdown_minutes}} * 60; // 10 minutes in seconds
+      var TIMER_KEY = 'cart_timer_expiry';
+      var INTERVAL_KEY = 'cart_timer_interval';
+      var TIMER_CONTAINER_SELECTOR = '.drawer__header';
+      var TIMER_SPAN_ID = 'cart-timer';
+      var observer = null;
+      var lastEmpty = null;
+      var debounceTimeout = null;
+      var MESSAGE_TEXT = '{{ settings.message_text | replace: "'", "\\'" }}';
+      var MESSAGE_TEXT_2 = '{{ settings.message_text_2 | replace: "'", "\\'" }}';
+      var EXPIRED_MESSAGE = '{{ settings.expired_message | replace: "'", "\\'" }}';
 
-  function formatTime(secs) {
-    var m = Math.floor(secs / 60);
-    var s = secs % 60;
-    return m.toString().padStart(2, '0') + ':' + s.toString().padStart(2, '0');
-  }
-
-  function isCartEmpty() {
-    var cartDrawer = document.querySelector('cart-drawer');
-    return cartDrawer && cartDrawer.classList.contains('is-empty');
-  }
-
-  function showTimer(show) {
-    var timerSpan = document.getElementById('cart-timer');
-    if (timerSpan) timerSpan.style.display = show ? '' : 'none';
-  }
-
-  function updateTimer() {
-    var timerSpan = document.getElementById('cart-timer');
-    if (!timerSpan) return;
-    
-    var now = Math.floor(Date.now() / 1000);
-    var expiry = parseInt(localStorage.getItem(TIMER_KEY), 10);
-    if (!expiry || isNaN(expiry)) {
-      expiry = now + TIMER_DURATION;
-      localStorage.setItem(TIMER_KEY, expiry);
-      localStorage.setItem('cart_timer_expired', 'false');
-    }
-    var remaining = expiry - now;
-    if (isNaN(remaining) || remaining <= 0) {
-      var expireAction = "{{ settings.expire_action }}";
-      if (expireAction === "repeat") {
-        expiry = now + TIMER_DURATION;
-        localStorage.setItem(TIMER_KEY, expiry);
-        localStorage.setItem('cart_timer_expired', 'false');
-        remaining = expiry - now;
-        timerSpan.textContent = MESSAGE_TEXT + ' ' + formatTime(remaining) + ' ' + MESSAGE_TEXT_2;
-      } else { // show_message (default)
-        timerSpan.textContent = EXPIRED_MESSAGE;
-        timerSpan.style.color = '{{settings.expired_color}}';
-        timerSpan.style.backgroundColor = '{{settings.expired_bg}}';
-        clearInterval(window[INTERVAL_KEY]);
-        localStorage.removeItem(TIMER_KEY);
-        localStorage.setItem('cart_timer_expired', 'true');
+      function formatTime(secs) {
+        var m = Math.floor(secs / 60);
+        var s = secs % 60;
+        return m.toString().padStart(2, '0') + ':' + s.toString().padStart(2, '0');
       }
-      return;
-    }
-    timerSpan.textContent = MESSAGE_TEXT + ' ' + formatTime(remaining) + ' ' + MESSAGE_TEXT_2;
-    // Set text color for the message part
-    timerSpan.style.color = '{{settings.text_color}}';
-    // Create a span for the countdown part with timer color
-    var messagePart = MESSAGE_TEXT;
-    var messagePart2 = MESSAGE_TEXT_2;
-    var countdownPart = formatTime(remaining);
-    timerSpan.innerHTML = messagePart + ' <span style="color: {{settings.timer_color}}; font-weight: {{settings.timer_font_weight}};">' + countdownPart + '</span>' + ' ' + messagePart2;
-  }
 
-  function startCartTimer() {
-    var timerSpan = document.getElementById('cart-timer');
-    if (!timerSpan) return;
-    
-    // Clear any existing interval
-    if (window[INTERVAL_KEY]) clearInterval(window[INTERVAL_KEY]);
-    
-    var expireAction = "{{ settings.expire_action }}";
-    var expiredFlag = localStorage.getItem('cart_timer_expired');
-    // Prevent restart if expired and not repeating
-    if (expireAction !== "repeat" && expiredFlag === 'true') {
-      timerSpan.textContent = EXPIRED_MESSAGE;
-      timerSpan.style.color = '{{settings.expired_color}}';
-      timerSpan.style.backgroundColor = '{{settings.expired_bg}}';
-      return; // Do not set interval or update timer
-    }
-    var now = Math.floor(Date.now() / 1000);
-    var expiry = parseInt(localStorage.getItem(TIMER_KEY), 10);
-    if (!expiry || isNaN(expiry) || expiry < now) {
-      expiry = now + TIMER_DURATION;
-      localStorage.setItem(TIMER_KEY, expiry);
-      localStorage.setItem('cart_timer_expired', 'false');
-    }
-    showTimer(true);
-    updateTimer();
-    window[INTERVAL_KEY] = setInterval(updateTimer, 1000);
-  }
-
-  function stopCartTimer() {
-    showTimer(false);
-    if (window[INTERVAL_KEY]) clearInterval(window[INTERVAL_KEY]);
-    localStorage.removeItem(TIMER_KEY);
-    localStorage.setItem('cart_timer_expired', 'false'); // Reset expired flag when cart is emptied
-  }
-
-  function ensureTimerExists() {
-    // Check if timer element exists and re-initialize if needed
-    var timerSpan = document.getElementById('cart-timer');
-    if (timerSpan && !isCartEmpty()) {
-      // Ensure timer is visible and properly styled
-      showTimer(true);
-      timerSpan.style.display = '';
-      
-      // Timer element exists and cart is not empty, ensure timer is running
-      if (!window[INTERVAL_KEY]) {
-        startCartTimer();
-      } else {
-        // Timer is running, just ensure it's visible and properly styled
-        // Force a timer update to ensure proper styling
-        updateTimer();
+      function isCartEmpty() {
+        var cartDrawer = document.querySelector('cart-drawer');
+        return cartDrawer && cartDrawer.classList.contains('is-empty');
       }
-    }
-  }
 
-  function checkAndRestoreTimer() {
-    // Simple check to restore timer visibility without interfering with cart functionality
-    var timerSpan = document.getElementById('cart-timer');
-    if (timerSpan && !isCartEmpty() && timerSpan.style.display === 'none') {
-      timerSpan.style.display = '';
-      if (!window[INTERVAL_KEY]) {
-        startCartTimer();
+      function showTimer(show) {
+        var timerSpan = document.getElementById('cart-timer');
+        if (timerSpan) timerSpan.style.display = show ? '' : 'none';
       }
-    }
-  }
 
+      function updateTimer() {
+        var timerSpan = document.getElementById('cart-timer');
+        if (!timerSpan) return;
 
-
-  function handleCartChange(mutations) {
-    // Only process class attribute changes to avoid conflicts with cart functionality
-    var hasClassChange = mutations.some(function(mutation) {
-      return mutation.type === 'attributes' && mutation.attributeName === 'class';
-    });
-    
-    if (!hasClassChange) return;
-    
-    // Debounce to avoid rapid firing and give cart upsell time to work
-    if (debounceTimeout) clearTimeout(debounceTimeout);
-    debounceTimeout = setTimeout(function() {
-      var empty = isCartEmpty();
-      if (empty !== lastEmpty) {
-        lastEmpty = empty;
-        if (!empty) {
-          startCartTimer();
-        } else {
-          stopCartTimer();
+        var now = Math.floor(Date.now() / 1000);
+        var expiry = parseInt(localStorage.getItem(TIMER_KEY), 10);
+        if (!expiry || isNaN(expiry)) {
+          expiry = now + TIMER_DURATION;
+          localStorage.setItem(TIMER_KEY, expiry);
+          localStorage.setItem('cart_timer_expired', 'false');
         }
-      } else if (!empty) {
-        // Cart updated but not empty, re-attach timer
-        startCartTimer();
+        var remaining = expiry - now;
+        if (isNaN(remaining) || remaining <= 0) {
+          var expireAction = "{{ settings.expire_action }}";
+          if (expireAction === "repeat") {
+            expiry = now + TIMER_DURATION;
+            localStorage.setItem(TIMER_KEY, expiry);
+            localStorage.setItem('cart_timer_expired', 'false');
+            remaining = expiry - now;
+            timerSpan.textContent = MESSAGE_TEXT + ' ' + formatTime(remaining) + ' ' + MESSAGE_TEXT_2;
+          } else { // show_message (default)
+            timerSpan.textContent = EXPIRED_MESSAGE;
+            timerSpan.style.color = '{{settings.expired_color}}';
+            timerSpan.style.backgroundColor = '{{settings.expired_bg}}';
+            clearInterval(window[INTERVAL_KEY]);
+            localStorage.removeItem(TIMER_KEY);
+            localStorage.setItem('cart_timer_expired', 'true');
+          }
+          return;
+        }
+        timerSpan.textContent = MESSAGE_TEXT + ' ' + formatTime(remaining) + ' ' + MESSAGE_TEXT_2;
+        // Set text color for the message part
+        timerSpan.style.color = '{{settings.text_color}}';
+        // Create a span for the countdown part with timer color
+        var messagePart = MESSAGE_TEXT;
+        var messagePart2 = MESSAGE_TEXT_2;
+        var countdownPart = formatTime(remaining);
+        timerSpan.innerHTML = messagePart + ' <span style="color: {{settings.timer_color}}; font-weight: {{settings.timer_font_weight}};">' + countdownPart + '</span>' + ' ' + messagePart2;
       }
-    }, 300);
-  }
 
-  function observeCart() {
-    var cartDrawer = document.querySelector('cart-drawer');
-    if (!cartDrawer) return;
-    lastEmpty = isCartEmpty();
-    if (observer) observer.disconnect();
-    observer = new MutationObserver(handleCartChange);
-    // Only observe class changes to avoid conflicts with cart functionality
-    observer.observe(cartDrawer, { 
-      attributes: true, 
-      attributeFilter: ['class'], 
-      childList: false, 
-      subtree: false 
-    });
-    // Initial check with small delay to avoid conflicts with cart upsell
-    setTimeout(function() {
-      if (!lastEmpty) startCartTimer();
-      else stopCartTimer();
-    }, 200);
-  }
+      function startCartTimer() {
+        var timerSpan = document.getElementById('cart-timer');
+        if (!timerSpan) return;
 
-  // Listen for cart update events to ensure timer is re-initialized
-  document.addEventListener('cart-update', function() {
-    if (!isCartEmpty()) {
-      setTimeout(ensureTimerExists, 100);
-    }
-  });
+        // Clear any existing interval
+        if (window[INTERVAL_KEY]) clearInterval(window[INTERVAL_KEY]);
 
-  // Also listen for the specific cart update event that happens when quantities change
-  document.addEventListener('cart-items:updated', function() {
-    if (!isCartEmpty()) {
-      setTimeout(ensureTimerExists, 100);
-    }
-  });
+        var expireAction = "{{ settings.expire_action }}";
+        var expiredFlag = localStorage.getItem('cart_timer_expired');
+        // Prevent restart if expired and not repeating
+        if (expireAction !== "repeat" && expiredFlag === 'true') {
+          timerSpan.textContent = EXPIRED_MESSAGE;
+          timerSpan.style.color = '{{settings.expired_color}}';
+          timerSpan.style.backgroundColor = '{{settings.expired_bg}}';
+          return; // Do not set interval or update timer
+        }
+        var now = Math.floor(Date.now() / 1000);
+        var expiry = parseInt(localStorage.getItem(TIMER_KEY), 10);
+        if (!expiry || isNaN(expiry) || expiry < now) {
+          expiry = now + TIMER_DURATION;
+          localStorage.setItem(TIMER_KEY, expiry);
+          localStorage.setItem('cart_timer_expired', 'false');
+        }
+        showTimer(true);
+        updateTimer();
+        window[INTERVAL_KEY] = setInterval(updateTimer, 1000);
+      }
+
+      function stopCartTimer() {
+        showTimer(false);
+        if (window[INTERVAL_KEY]) clearInterval(window[INTERVAL_KEY]);
+        localStorage.removeItem(TIMER_KEY);
+        localStorage.setItem('cart_timer_expired', 'false'); // Reset expired flag when cart is emptied
+      }
+
+      function ensureTimerExists() {
+        // Check if timer element exists and re-initialize if needed
+        var timerSpan = document.getElementById('cart-timer');
+        if (timerSpan && !isCartEmpty()) {
+          // Ensure timer is visible and properly styled
+          showTimer(true);
+          timerSpan.style.display = '';
+
+          // Timer element exists and cart is not empty, ensure timer is running
+          if (!window[INTERVAL_KEY]) {
+            startCartTimer();
+          } else {
+            // Timer is running, just ensure it's visible and properly styled
+            // Force a timer update to ensure proper styling
+            updateTimer();
+          }
+        }
+      }
+
+      function checkAndRestoreTimer() {
+        // Simple check to restore timer visibility without interfering with cart functionality
+        var timerSpan = document.getElementById('cart-timer');
+        if (timerSpan && !isCartEmpty() && timerSpan.style.display === 'none') {
+          timerSpan.style.display = '';
+          if (!window[INTERVAL_KEY]) {
+            startCartTimer();
+          }
+        }
+      }
 
 
 
-  // Listen for cart drawer open events to ensure timer is visible
-  document.addEventListener('cart-drawer:open', function() {
-    if (!isCartEmpty()) {
-      setTimeout(ensureTimerExists, 100);
-    }
-  });
+      function handleCartChange(mutations) {
+        // Only process class attribute changes to avoid conflicts with cart functionality
+        var hasClassChange = mutations.some(function(mutation) {
+          return mutation.type === 'attributes' && mutation.attributeName === 'class';
+        });
 
-  // Add a simple click listener to the cart drawer to restore timer when needed
-  document.addEventListener('click', function(event) {
-    if (event.target.closest('cart-drawer') && !isCartEmpty()) {
-      setTimeout(checkAndRestoreTimer, 50);
-    }
-  });
+        if (!hasClassChange) return;
 
-  document.addEventListener('DOMContentLoaded', observeCart);
-})();
-</script>
+        // Debounce to avoid rapid firing and give cart upsell time to work
+        if (debounceTimeout) clearTimeout(debounceTimeout);
+        debounceTimeout = setTimeout(function() {
+          var empty = isCartEmpty();
+          if (empty !== lastEmpty) {
+            lastEmpty = empty;
+            if (!empty) {
+              startCartTimer();
+            } else {
+              stopCartTimer();
+            }
+          } else if (!empty) {
+            // Cart updated but not empty, re-attach timer
+            startCartTimer();
+          }
+        }, 300);
+      }
+
+      function observeCart() {
+        var cartDrawer = document.querySelector('cart-drawer');
+        if (!cartDrawer) return;
+        lastEmpty = isCartEmpty();
+        if (observer) observer.disconnect();
+        observer = new MutationObserver(handleCartChange);
+        // Only observe class changes to avoid conflicts with cart functionality
+        observer.observe(cartDrawer, {
+          attributes: true,
+          attributeFilter: ['class'],
+          childList: false,
+          subtree: false
+        });
+        // Initial check with small delay to avoid conflicts with cart upsell
+        setTimeout(function() {
+          if (!lastEmpty) startCartTimer();
+          else stopCartTimer();
+        }, 200);
+      }
+
+      // Listen for cart update events to ensure timer is re-initialized
+      document.addEventListener('cart-update', function() {
+        if (!isCartEmpty()) {
+          setTimeout(ensureTimerExists, 100);
+        }
+      });
+
+      // Also listen for the specific cart update event that happens when quantities change
+      document.addEventListener('cart-items:updated', function() {
+        if (!isCartEmpty()) {
+          setTimeout(ensureTimerExists, 100);
+        }
+      });
+
+
+
+      // Listen for cart drawer open events to ensure timer is visible
+      document.addEventListener('cart-drawer:open', function() {
+        if (!isCartEmpty()) {
+          setTimeout(ensureTimerExists, 100);
+        }
+      });
+
+      // Add a simple click listener to the cart drawer to restore timer when needed
+      document.addEventListener('click', function(event) {
+        if (event.target.closest('cart-drawer') && !isCartEmpty()) {
+          setTimeout(checkAndRestoreTimer, 50);
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', observeCart);
+    })();
+  </script>
 {% endif %}
