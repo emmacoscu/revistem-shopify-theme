@@ -98,7 +98,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/freepik_2838797927.jpg",
+        "image": "shopify://shop_images/freepik_2839142552.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
@@ -184,7 +184,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/495580998_1235595038574656_4948464342182066681_n.jpg",
+        "image": "shopify://shop_images/freepik_2833701775.jpg",
         "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -365,6 +365,7 @@
       "block_order": [
         "ai_gen_block_da16769_XPKK4V"
       ],
+      "disabled": true,
       "settings": {}
     }
   },
