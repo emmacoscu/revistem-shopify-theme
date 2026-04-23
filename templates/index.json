@@ -129,6 +129,7 @@
     },
     "countdown_timer_t9GjmT": {
       "type": "countdown-timer",
+      "disabled": true,
       "name": "Countdown Timer",
       "settings": {
         "color_scheme": "accent-1",
