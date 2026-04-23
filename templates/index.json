@@ -693,18 +693,6 @@
         "padding_bottom": 64
       }
     },
-    "rich_text_kViQY7": {
-      "type": "rich-text",
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 16
-      }
-    },
     "before_after_rmYV6L": {
       "type": "before-after",
       "blocks": {
@@ -818,7 +806,6 @@
     "lumin_hero_Pq7Gre",
     "1774355846783fd27e",
     "collapsible_content_jdrwfj",
-    "rich_text_kViQY7",
     "before_after_rmYV6L",
     "autoplay_video_pUjczr"
   ]
