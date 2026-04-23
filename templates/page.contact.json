@@ -245,47 +245,7 @@
         "padding_top": 0,
         "padding_bottom": 36,
         "margin_top": 0,
-        "margin_bottom": 36
-      }
-    },
-    "contact_form_KFzHpY": {
-      "type": "contact-form",
-      "blocks": {
-        "name_kYHFAR": {
-          "type": "name",
-          "settings": {}
-        },
-        "email_qCR7VR": {
-          "type": "email",
-          "settings": {}
-        },
-        "tel_fmMDDQ": {
-          "type": "tel",
-          "settings": {}
-        },
-        "textarea_mkJ8dD": {
-          "type": "textarea",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "name_kYHFAR",
-        "email_qCR7VR",
-        "tel_fmMDDQ",
-        "textarea_mkJ8dD"
-      ],
-      "name": "t:sections.contact-form.presets.name",
-      "settings": {
-        "heading": "Contacto",
-        "heading_size": "h0",
-        "heading_align": "center",
-        "heading_align_mobile": "center",
-        "sub_heading": "<p>Si tienes dudas sobre el tratamiento, el pedido o tu compra, <br/>escríbenos y te ayudamos.</p>",
-        "sub_heading_align": "center",
-        "sub_heading_align_mobile": "center",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "margin_bottom": 0
       }
     },
     "collapsible_content_NiCiRD": {
@@ -347,7 +307,6 @@
     "rich_text_nQEkG8",
     "contact_form_9HMb99",
     "lumin_gallery_KMqKMA",
-    "contact_form_KFzHpY",
     "collapsible_content_NiCiRD"
   ]
 }
