@@ -77,7 +77,7 @@
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "La línea Revistem",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "description": "<p>Suplementación capilar formulada desde la evidencia, con dosis que importan y compatibilidad real con los tratamientos médicos habituales para la alopecia. Elige por dónde empiezas.</p>",
         "show_description": false,
         "description_style": "body",
@@ -102,7 +102,7 @@
         "show_secondary_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 36,
+        "padding_top": 52,
         "padding_bottom": 16
       }
     },
