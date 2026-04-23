@@ -811,10 +811,47 @@
         "heading_font": "serif",
         "main_font": "system_ui_n4"
       }
+    },
+    "countdown_timer_t9GjmT": {
+      "type": "countdown-timer",
+      "name": "Countdown Timer",
+      "settings": {
+        "color_scheme": "accent-1",
+        "layout": "full_bleed",
+        "max_width": 600,
+        "show_border": false,
+        "timer_border": "#eeeeee",
+        "video_border": 0,
+        "message_main": "<p>La oferta finaliza en:</p>",
+        "timer_text_size": 15,
+        "timer_text_size_mb": 14,
+        "text_layout": "left",
+        "text_layout_mb": "center",
+        "date": "2026-12-31",
+        "number_size": "small",
+        "font_style": "normal",
+        "timer_size": 1,
+        "timer_size_mb": 0.8,
+        "timer_days": "",
+        "hide_days": true,
+        "timer_hrs": "72",
+        "timer_min": "",
+        "timer_sec": "",
+        "head_font": false,
+        "timer_color": "#212121",
+        "timer_bg": "#ffffff",
+        "message": "<p>Sale is end!</p>",
+        "message_size": 20,
+        "padding_top": 8,
+        "padding_bottom": 8,
+        "margin_top": 0,
+        "margin_bottom": 0
+      }
     }
   },
   "order": [
     "slideshow_iabDhC",
+    "countdown_timer_t9GjmT",
     "featured_collection_rcbPLF",
     "1776765978ac165964",
     "lumin_mega_FhahM7",
