@@ -99,7 +99,7 @@
         "enable_hover_animation": false,
         "color-transparent": "#ffffff",
         "color-hover-background": "#ffffff",
-        "color-hover-text": "#1c1d19",
+        "color-hover-text": "#ffffff",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
