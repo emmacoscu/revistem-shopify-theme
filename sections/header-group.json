@@ -58,7 +58,7 @@
         "visibility": "both",
         "mobile_height": 40,
         "desktop_height": 40,
-        "color_scheme": "accent-1",
+        "color_scheme": "inverse",
         "layout": "full_bleed",
         "max_width": 600,
         "show_border": false,
