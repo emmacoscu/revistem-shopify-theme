@@ -96,7 +96,7 @@
       "settings": {
         "enable_transparent-header": true,
         "enable_hover_animation": false,
-        "color-transparent": "#1c1d19",
+        "color-transparent": "#000000",
         "color-hover-background": "#ffffff",
         "color-hover-text": "#1c1d19",
         "logo_position": "middle-left",
