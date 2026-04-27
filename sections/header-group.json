@@ -95,8 +95,8 @@
       "custom_css": [],
       "settings": {
         "enable_transparent-header": true,
-        "enable_hover_animation": true,
-        "color-transparent": "#1c1d19",
+        "enable_hover_animation": false,
+        "color-transparent": "#ffffff",
         "color-hover-background": "#ffffff",
         "color-hover-text": "#1c1d19",
         "logo_position": "middle-left",
