@@ -107,40 +107,60 @@
         class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;z-index: 1;"
       >
-        {%- if card_image -%}
-          <div class="card__media lm-img">
-            <div class="media media--transparent media--hover-effect">
-              {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-              {% liquid
-                assign alternate_media_is_video = false
-                if card_image.media_type == 'video'
-                  assign alternate_media_is_video = true
-                endif
-              %}
+{%- if card_image -%}
+  {%- liquid
+    # Detectar columnas en desktop de forma defensiva
+    assign columns_desktop = 4
+    if section.settings.columns_desktop
+      assign columns_desktop = section.settings.columns_desktop
+    elsif section.settings.columns
+      assign columns_desktop = section.settings.columns
+    elsif section.settings.products_per_row
+      assign columns_desktop = section.settings.products_per_row
+    elsif columns
+      assign columns_desktop = columns
+    endif
 
-              {% unless alternate_media_is_video %}
-                <img
-srcset="
-  {%- if card_image.width >= 360 -%}{{ card_image | image_url: width: 360 }} 360w,{%- endif -%}
-  {%- if card_image.width >= 540 -%}{{ card_image | image_url: width: 540 }} 540w,{%- endif -%}
-  {%- if card_image.width >= 720 -%}{{ card_image | image_url: width: 720 }} 720w,{%- endif -%}
-  {%- if card_image.width >= 900 -%}{{ card_image | image_url: width: 900 }} 900w,{%- endif -%}
-  {%- if card_image.width >= 1200 -%}{{ card_image | image_url: width: 1200 }} 1200w,{%- endif -%}
-  {%- if card_image.width >= 1500 -%}{{ card_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-  {{ card_image | image_url }} {{ card_image.width }}w
-"
-                  src="{{ card_image | image_url: width: 533 }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                  alt="{{ card_image.alt | escape }}"
-                  class="motion-reduce"
-                  {% unless lazy_load == false %}
-                    loading="lazy"
-                  {% endunless %}
-                  width="{{ card_image.width }}"
-                  height="{{ card_image.height }}"
-                  {% if no_crop_image %}
-                    style="object-fit: contain;"
-                  {% endif %}
+    # Calcular ancho de card en desktop (en px CSS)
+    assign card_width_desktop = settings.page_width | minus: 130 | divided_by: columns_desktop
+
+    # Detectar si es video alternativo
+    assign alternate_media_is_video = false
+    if card_image.media_type == 'video'
+      assign alternate_media_is_video = true
+    endif
+  -%}
+
+  <div class="card__media lm-img">
+    <div class="media media--transparent media--hover-effect">
+      {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+
+      {% unless alternate_media_is_video %}
+        <img
+          srcset="
+            {%- if card_image.width >= 360 -%}{{ card_image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if card_image.width >= 540 -%}{{ card_image | image_url: width: 540 }} 540w,{%- endif -%}
+            {%- if card_image.width >= 720 -%}{{ card_image | image_url: width: 720 }} 720w,{%- endif -%}
+            {%- if card_image.width >= 900 -%}{{ card_image | image_url: width: 900 }} 900w,{%- endif -%}
+            {%- if card_image.width >= 1080 -%}{{ card_image | image_url: width: 1080 }} 1080w,{%- endif -%}
+            {%- if card_image.width >= 1296 -%}{{ card_image | image_url: width: 1296 }} 1296w,{%- endif -%}
+            {%- if card_image.width >= 1512 -%}{{ card_image | image_url: width: 1512 }} 1512w,{%- endif -%}
+            {%- if card_image.width >= 1800 -%}{{ card_image | image_url: width: 1800 }} 1800w,{%- endif -%}
+            {{ card_image | image_url }} {{ card_image.width }}w
+          "
+          src="{{ card_image | image_url: width: 720 }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ card_width_desktop }}px, (min-width: 990px) calc((100vw - 130px) / {{ columns_desktop }}), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+          alt="{{ card_image.alt | escape }}"
+          class="motion-reduce"
+          {% unless lazy_load == false %}
+            loading="lazy"
+          {% endunless %}
+          width="{{ card_image.width }}"
+          height="{{ card_image.height }}"
+          {% if no_crop_image %}
+            style="object-fit: contain;"
+          {% endif %}
+        >
                 >
               {% else %}
                 {{
