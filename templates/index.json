@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Banner-pc.png",
-            "mobile_image": "shopify://shop_images/Banner-Home-Revistem-responsve_80dca304-62ec-4f69-a4ee-73f04fa8ee3e.jpg",
+            "mobile_image": "shopify://shop_images/Banner-Home-1-responsve.jpg",
             "caption": "",
             "block_cap_size": 10,
             "cap_color": "#1c1d19",
@@ -48,6 +48,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/BannerV2.jpg",
+            "mobile_image": "shopify://shop_images/Banner-Home-3-responsve.jpg",
             "caption": "",
             "block_cap_size": 20,
             "cap_color": "#222222",
