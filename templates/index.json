@@ -14,6 +14,7 @@
       "blocks": {
         "slide_TnkpPR": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Banner-pc.png",
             "mobile_image": "shopify://shop_images/Banner-Home-1-responsve.jpg",
