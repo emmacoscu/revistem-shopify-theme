@@ -36,7 +36,7 @@
             "button_style_secondary": true,
             "box_align": "bottom-center",
             "show_text_box": false,
-            "container_size": 600,
+            "container_size": 520,
             "text_alignment": "center",
             "image_overlay_opacity": 10,
             "color_scheme": "accent-1",
