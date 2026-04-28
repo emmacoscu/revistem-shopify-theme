@@ -1,6 +1,436 @@
+{% doc %}
+  @prompt
+    Design a “compatibility with treatment” section for a premium hair supplement brand (Revistem).
+    
+    Goal:
+    Build trust and reduce friction for users already following hair loss treatments.
+    
+    Tone:
+    - Clinical, calm, precise
+    - No medical claims
+    - No exaggeration
+    
+    Content:
+    Revistem está formulado para complementar protocolos activos...
+    
+    Requirements:
+    - Structure in 2 clear parts:
+      1. Main message (2–3 short paragraphs)
+      2. Disclaimer (smaller text)
+    
+    - Keep sentences short and clear
+    - Avoid complex medical language
+    - Make it easy to scan
+    
+    Design:
+    - Minimal layout
+    - Left-aligned text
+    - Strong title + lighter body
+    - Disclaimer visually separated (smaller font or lower contrast)
+    - Plenty of white space
+    
+    Optional:
+    - Add subtle divider between main text and disclaimer
+    
+    Output:
+    - Final Spanish copy
+    - Suggested hierarchy (title, body, disclaimer)
+    - Layout recommendation
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-compatibility-section-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 0;
+  }
+
+  .ai-compatibility-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.content_max_width }}px;
+    margin: 0 auto;
+    padding: 0 {{ block.settings.horizontal_padding }}px;
+  }
+
+  .ai-compatibility-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: {{ block.settings.title_weight }};
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.title_spacing }}px 0;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  .ai-compatibility-content-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.content_spacing }}px;
+  }
+
+  .ai-compatibility-content-{{ ai_gen_id }} p {
+    font-size: {{ block.settings.body_size }}px;
+    line-height: {{ block.settings.body_line_height }};
+    color: {{ block.settings.body_color }};
+    margin: 0 0 {{ block.settings.paragraph_spacing }}px 0;
+    text-align: left;
+  }
+
+  .ai-compatibility-content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-compatibility-divider-{{ ai_gen_id }} {
+    width: 100%;
+    height: 1px;
+    background-color: {{ block.settings.divider_color }};
+    margin: {{ block.settings.divider_spacing }}px 0;
+    opacity: {{ block.settings.divider_opacity | divided_by: 100.0 }};
+  }
+
+  .ai-compatibility-disclaimer-{{ ai_gen_id }} {
+    margin-top: {{ block.settings.disclaimer_spacing }}px;
+  }
+
+  .ai-compatibility-disclaimer-{{ ai_gen_id }} p {
+    font-size: {{ block.settings.disclaimer_size }}px;
+    line-height: {{ block.settings.disclaimer_line_height }};
+    color: {{ block.settings.disclaimer_color }};
+    margin: 0 0 {{ block.settings.disclaimer_paragraph_spacing }}px 0;
+    text-align: left;
+  }
+
+  .ai-compatibility-disclaimer-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-compatibility-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_mobile }}px;
+    }
+
+    .ai-compatibility-content-{{ ai_gen_id }} p {
+      font-size: {{ block.settings.body_size_mobile }}px;
+    }
+
+    .ai-compatibility-disclaimer-{{ ai_gen_id }} p {
+      font-size: {{ block.settings.disclaimer_size_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-compatibility-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-compatibility-container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank %}
+      <h2 class="ai-compatibility-title-{{ ai_gen_id }}">
+        {{ block.settings.title }}
+      </h2>
+    {% endif %}
+
+    {% if block.settings.main_content != blank %}
+      <div class="ai-compatibility-content-{{ ai_gen_id }}">
+        {{ block.settings.main_content }}
+      </div>
+    {% endif %}
+
+    {% if block.settings.show_divider %}
+      <div class="ai-compatibility-divider-{{ ai_gen_id }}"></div>
+    {% endif %}
+
+    {% if block.settings.disclaimer != blank %}
+      <div class="ai-compatibility-disclaimer-{{ ai_gen_id }}">
+        {{ block.settings.disclaimer }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Compatibility section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "Compatibilidad con tratamientos activos"
+    },
+    {
+      "type": "richtext",
+      "id": "main_content",
+      "label": "Main content",
+      "default": "<p>Revistem está formulado para complementar protocolos activos como minoxidil, finasteride o tratamientos capilares profesionales.</p><p>Aporta nutrientes esenciales que refuerzan la salud del folículo desde el interior, sin interferir con mecanismos de acción externos.</p><p>Puede integrarse de forma segura en rutinas existentes bajo supervisión profesional.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "disclaimer",
+      "label": "Disclaimer",
+      "default": "<p>Este producto no sustituye tratamientos médicos. Consulta con tu especialista antes de combinarlo con medicación prescrita. No está destinado a diagnosticar, tratar o prevenir ninguna enfermedad.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width",
+      "min": 400,
+      "max": 1200,
+      "step": 50,
+      "unit": "px",
+      "default": 700
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "label": "Horizontal padding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Title style"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Desktop size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Mobile size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "600",
+          "label": "Semibold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "label": "Bottom spacing",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Main content style"
+    },
+    {
+      "type": "range",
+      "id": "body_size",
+      "label": "Desktop size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "body_size_mobile",
+      "label": "Mobile size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "body_line_height",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.6
+    },
+    {
+      "type": "color",
+      "id": "body_color",
+      "label": "Color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "paragraph_spacing",
+      "label": "Paragraph spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "label": "Bottom spacing",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Divider"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "label": "Show divider",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "divider_opacity",
+      "label": "Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "divider_spacing",
+      "label": "Spacing",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Disclaimer style"
+    },
+    {
+      "type": "range",
+      "id": "disclaimer_size",
+      "label": "Desktop size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "disclaimer_size_mobile",
+      "label": "Mobile size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "disclaimer_line_height",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "color",
+      "id": "disclaimer_color",
+      "label": "Color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "disclaimer_paragraph_spacing",
+      "label": "Paragraph spacing",
+      "min": 5,
+      "max": 20,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "disclaimer_spacing",
+      "label": "Top spacing",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    }
+  ],
+  "presets": [
+    {
+      "name": "Compatibility section"
+    }
+  ]
+}
 {% endschema %}
