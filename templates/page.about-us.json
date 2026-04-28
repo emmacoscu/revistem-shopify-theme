@@ -62,6 +62,58 @@
         "mobile_height": 500
       }
     },
+    "17773612137123ae55": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d31465e_xmrM7n": {
+          "type": "ai_gen_block_d31465e",
+          "settings": {
+            "show_title": true,
+            "section_title": "Por qué existe Revistem",
+            "title_font": "assistant_n4",
+            "title_size": 14,
+            "title_size_mobile": 12,
+            "title_color": "#999999",
+            "title_spacing": 16,
+            "title_spacing_mobile": 12,
+            "show_divider": false,
+            "divider_width": 40,
+            "divider_color": "#e0e0e0",
+            "divider_spacing": 32,
+            "divider_spacing_mobile": 24,
+            "paragraph_1": "Revistem nació de una búsqueda personal. Buscaba un suplemento capilar que no se limitara a poner biotina y saw palmetto en una cápsula y llamarlo \"fórmula avanzada\".",
+            "paragraph_2": "Quería algo que atacara el problema desde dentro: soporte folicular real, pero también soporte celular, mitocondrial y antioxidante sistémico.",
+            "paragraph_3": "Lo que encontré en el mercado era o demasiado superficial o demasiado genérico. Fórmulas con ingredientes interesantes en dosis que no sirven para nada. Marketing construido sobre claims que ninguna etiqueta podía sostener.",
+            "paragraph_4": "Así que decidí formularlo desde cero, con un criterio claro: cada ingrediente tiene que estar por una razón, a una dosis que tenga sentido, y tiene que poder explicarse sin exagerar.",
+            "closing_line": "Revistem es el resultado de ese proceso.",
+            "body_font": "assistant_n4",
+            "body_size": 16,
+            "body_size_mobile": 15,
+            "line_height": 1.8,
+            "text_color": "#333333",
+            "closing_size": 15,
+            "closing_size_mobile": 14,
+            "closing_style": "normal",
+            "content_max_width": 640,
+            "paragraph_spacing": 28,
+            "paragraph_spacing_mobile": 20,
+            "emphasis_spacing": 12,
+            "emphasis_spacing_mobile": 8,
+            "closing_spacing": 48,
+            "closing_spacing_mobile": 32,
+            "section_padding_top": 80,
+            "section_padding_bottom": 80,
+            "section_padding_top_mobile": 48,
+            "section_padding_bottom_mobile": 48
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d31465e_xmrM7n"
+      ],
+      "settings": {}
+    },
     "image_banner_whhJiG": {
       "type": "image-banner",
       "blocks": {
@@ -363,6 +415,7 @@
     "video_new_Wpi43U",
     "image_banner_whhJiG",
     "rich_text_pxGm8H",
+    "17773612137123ae55",
     "image_with_text_RfXdzE",
     "177684373859d7c8c8",
     "featured_collection_XDxYph",
