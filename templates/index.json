@@ -12,6 +12,38 @@
     "slideshow_iabDhC": {
       "type": "slideshow",
       "blocks": {
+        "slide_zj8jbr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/freepik_match-the-correct-label-o_2872697512.png",
+            "mobile_image": "shopify://shop_images/Banner-Home-2-responsve.jpg",
+            "caption": "",
+            "block_cap_size": 20,
+            "cap_color": "#222222",
+            "heading": "Soporte nutricional para el folículo",
+            "heading_font_size_desktop": 60,
+            "heading_font_size_mobile": 44,
+            "heading_line_height_desktop": 1.2,
+            "heading_line_height_mobile": 1.2,
+            "subheading": "La base para quienes empiezan a cuidar su salud capilar con criterio.",
+            "subheading_font_size_desktop": 20,
+            "subheading_font_size_mobile": 16,
+            "subheading_line_height_desktop": 1.4,
+            "subheading_line_height_mobile": 1.4,
+            "button_label": "Ver Revistem Hair",
+            "link": "shopify://products/revistem-hair",
+            "link-2": "",
+            "button_style_secondary": true,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "container_size": 1000,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "accent-1",
+            "box_align_mobile": "middle",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_dDHNRJ": {
           "type": "slide",
           "settings": {
@@ -32,38 +64,6 @@
             "subheading_line_height_mobile": 1.4,
             "button_label": "Ver Revistem Hair",
             "link": "shopify://products/revistem-hair",
-            "link-2": "",
-            "button_style_secondary": true,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "container_size": 1000,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "accent-1",
-            "box_align_mobile": "middle",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_zj8jbr": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/freepik_match-the-correct-label-o_2872697512.png",
-            "mobile_image": "shopify://shop_images/Banner-Home-2-responsve.jpg",
-            "caption": "",
-            "block_cap_size": 20,
-            "cap_color": "#222222",
-            "heading": "No es solo caída. Es un proceso sistémico.",
-            "heading_font_size_desktop": 60,
-            "heading_font_size_mobile": 44,
-            "heading_line_height_desktop": 1.2,
-            "heading_line_height_mobile": 1.2,
-            "subheading": "Inflamación, estrés oxidativo y señalización hormonal forman parte del problema.",
-            "subheading_font_size_desktop": 20,
-            "subheading_font_size_mobile": 16,
-            "subheading_line_height_desktop": 1.4,
-            "subheading_line_height_mobile": 1.4,
-            "button_label": "Entender la fórmula",
-            "link": "/#shopify-section-template--29599440961861__lumin_hero_Pq7Gre",
             "link-2": "",
             "button_style_secondary": true,
             "box_align": "bottom-center",
@@ -110,8 +110,8 @@
         }
       },
       "block_order": [
-        "slide_dDHNRJ",
         "slide_zj8jbr",
+        "slide_dDHNRJ",
         "slide_TnkpPR"
       ],
       "name": "t:sections.slideshow.presets.name",
