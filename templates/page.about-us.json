@@ -198,7 +198,7 @@
           "type": "button",
           "settings": {
             "button_label": "Ver Fórmulas",
-            "button_link": "",
+            "button_link": "shopify://collections/all",
             "button_style_secondary": false
           }
         }
