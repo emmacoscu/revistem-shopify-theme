@@ -86,7 +86,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/freepik_using-the-same-color-pale_2833632895.png",
+        "image": "shopify://shop_images/freepik_2839142552_35b9c119-b8a9-4eed-84e4-13ef03e8a40a.jpg",
         "image_overlay_opacity": 10,
         "image_height": "large",
         "desktop_content_position": "middle-left",
@@ -157,8 +157,8 @@
             "body_size_mobile": 16,
             "body_line_height": 1.7,
             "paragraph_spacing": 30,
-            "background_color": "#F9F2E9",
-            "text_color": "#2B2B2B"
+            "background_color": "#f9f2e9",
+            "text_color": "#2b2b2b"
           },
           "blocks": {}
         }
