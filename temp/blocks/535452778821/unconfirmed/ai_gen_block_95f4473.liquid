@@ -1,6 +1,579 @@
+{% doc %}
+  @prompt
+    I want to design a “certifications / trust logos” section for a premium health supplement brand (Revistem).
+    
+    Context:
+    - Brand tone: clinical, minimal, premium (not marketplace / not dropshipping)
+    - Goal: build trust and credibility without looking crowded or cheap
+    - These logos represent manufacturer certifications (GMP, ISO, EFSA, AECOC, Ministerio de Sanidad, etc.)
+    
+    Placement:
+    - This section will be placed just before the FAQ on the homepage
+    
+    Design requirements:
+    - Keep it minimal and clean
+    - Logos should not be too large (subtle, not dominant)
+    - Maintain generous white space
+    - Align with premium brands (Aesop, The Ordinary style)
+    
+    Layout options:
+    - Prefer a horizontal row of logos (desktop)
+    - On mobile: either a swipeable row OR 2 rows of logos (well spaced)
+    - Avoid carousel autoplay (feels cheap)
+    - Logos should be evenly spaced and aligned
+    
+    Styling:
+    - Use monochrome or slightly desaturated versions of the logos if possible (avoid too many colors)
+    - Reduce opacity slightly (e.g. 80–90%) to make them feel integrated
+    - Same visual weight for all logos (normalize sizes)
+    
+    Section content:
+    - Add a small title above (subtle, not big)
+    
+    Title options (Spanish):
+    - “Certificaciones”
+    - “Fabricado bajo estándares certificados”
+    - “Certificaciones y estándares”
+    
+    Optional subtitle (very subtle):
+    - “Fabricado bajo estándares europeos de calidad y seguridad”
+    
+    Avoid:
+    - Big icons
+    - Heavy borders or cards
+    - Too much contrast
+    - Marketing-style badges
+    
+    Output:
+    - Suggested layout (desktop + mobile)
+    - Final section title (Spanish)
+    - Spacing and sizing recommendations
+    - Whether to use carousel or static layout
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-certifications-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-certifications-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-certifications-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-certifications-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: {{ block.settings.title_weight }};
+    color: {{ block.settings.title_color }};
+    margin: 0 0 {{ block.settings.subtitle_spacing }}px;
+    letter-spacing: 0.5px;
+    text-transform: {{ block.settings.title_transform }};
+  }
+
+  .ai-certifications-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    opacity: {{ block.settings.subtitle_opacity | divided_by: 100.0 }};
+    font-weight: 300;
+    letter-spacing: 0.3px;
+  }
+
+  .ai-certifications-logos-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: {{ block.settings.logo_spacing }}px;
+    flex-wrap: wrap;
+  }
+
+  .ai-certifications-logo-item-{{ ai_gen_id }} {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: {{ block.settings.logo_opacity | divided_by: 100.0 }};
+    transition: opacity 0.3s ease;
+  }
+
+  .ai-certifications-logo-item-{{ ai_gen_id }}:hover {
+    opacity: 1;
+  }
+
+  .ai-certifications-logo-item-{{ ai_gen_id }} img {
+    max-width: {{ block.settings.logo_max_width }}px;
+    max-height: {{ block.settings.logo_max_height }}px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    {% if block.settings.grayscale %}
+      filter: grayscale({{ block.settings.grayscale_amount }}%);
+    {% endif %}
+  }
+
+  .ai-certifications-logo-placeholder-{{ ai_gen_id }} {
+    width: {{ block.settings.logo_max_width }}px;
+    height: {{ block.settings.logo_max_height }}px;
+    background-color: #f5f5f5;
+    border: 1px dashed #d0d0d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+
+  .ai-certifications-logo-placeholder-{{ ai_gen_id }} svg {
+    width: 40%;
+    height: 40%;
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-certifications-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_top_mobile }}px 0 {{ block.settings.section_padding_bottom_mobile }}px;
+    }
+
+    .ai-certifications-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_mobile }}px;
+    }
+
+    .ai-certifications-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_mobile }}px;
+    }
+
+    .ai-certifications-logos-{{ ai_gen_id }} {
+      gap: {{ block.settings.logo_spacing_mobile }}px;
+      {% if block.settings.mobile_layout == 'two_rows' %}
+        max-width: 100%;
+      {% endif %}
+    }
+
+    .ai-certifications-logo-item-{{ ai_gen_id }} img {
+      max-width: {{ block.settings.logo_max_width_mobile }}px;
+      max-height: {{ block.settings.logo_max_height_mobile }}px;
+    }
+
+    .ai-certifications-logo-placeholder-{{ ai_gen_id }} {
+      width: {{ block.settings.logo_max_width_mobile }}px;
+      height: {{ block.settings.logo_max_height_mobile }}px;
+    }
+
+    {% if block.settings.mobile_layout == 'scroll' %}
+      .ai-certifications-logos-{{ ai_gen_id }} {
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding-bottom: 10px;
+      }
+
+      .ai-certifications-logos-{{ ai_gen_id }}::-webkit-scrollbar {
+        display: none;
+      }
+    {% endif %}
+  }
+{% endstyle %}
+
+<div class="ai-certifications-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-certifications-container-{{ ai_gen_id }}">
+    {% if block.settings.show_header %}
+      <div class="ai-certifications-header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-certifications-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <p class="ai-certifications-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-certifications-logos-{{ ai_gen_id }}">
+      {% for i in (1..8) %}
+        {% liquid
+          assign logo_key = 'logo_' | append: i
+          assign logo = block.settings[logo_key]
+        %}
+        
+        {% if logo != blank %}
+          <div class="ai-certifications-logo-item-{{ ai_gen_id }}">
+            <img
+              src="{{ logo | image_url: width: 400 }}"
+              alt="{{ logo.alt | escape }}"
+              loading="lazy"
+              width="{{ logo.width }}"
+              height="{{ logo.height }}"
+            >
+          </div>
+        {% elsif i <= 5 %}
+          <div class="ai-certifications-logo-item-{{ ai_gen_id }}">
+            <div class="ai-certifications-logo-placeholder-{{ ai_gen_id }}">
+              {{ 'image' | placeholder_svg_tag }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Certificaciones",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Encabezado"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_header",
+      "label": "Mostrar encabezado",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título",
+      "default": "Certificaciones y estándares"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtítulo",
+      "default": "Fabricado bajo estándares europeos de calidad y seguridad"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Tamaño del título (escritorio)",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Tamaño del título (móvil)",
+      "min": 10,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Peso del título",
+      "options": [
+        { "value": "300", "label": "Ligero" },
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medio" },
+        { "value": "600", "label": "Semi-negrita" }
+      ],
+      "default": "500"
+    },
+    {
+      "type": "select",
+      "id": "title_transform",
+      "label": "Transformación del título",
+      "options": [
+        { "value": "none", "label": "Ninguna" },
+        { "value": "uppercase", "label": "Mayúsculas" },
+        { "value": "lowercase", "label": "Minúsculas" }
+      ],
+      "default": "uppercase"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Color del título",
+      "default": "#2c2c2c"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Tamaño del subtítulo (escritorio)",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "label": "Tamaño del subtítulo (móvil)",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Color del subtítulo",
+      "default": "#6b6b6b"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_opacity",
+      "label": "Opacidad del subtítulo",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 75
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "label": "Espacio debajo del encabezado",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "subtitle_spacing",
+      "label": "Espacio entre título y subtítulo",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Logos"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_1",
+      "label": "Logo 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_2",
+      "label": "Logo 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_3",
+      "label": "Logo 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_4",
+      "label": "Logo 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_5",
+      "label": "Logo 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_6",
+      "label": "Logo 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_7",
+      "label": "Logo 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_8",
+      "label": "Logo 8"
+    },
+    {
+      "type": "header",
+      "content": "Estilo de logos"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": "Ancho máximo del logo (escritorio)",
+      "min": 60,
+      "max": 180,
+      "step": 10,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "logo_max_height",
+      "label": "Altura máxima del logo (escritorio)",
+      "min": 40,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width_mobile",
+      "label": "Ancho máximo del logo (móvil)",
+      "min": 50,
+      "max": 140,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "logo_max_height_mobile",
+      "label": "Altura máxima del logo (móvil)",
+      "min": 30,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "logo_spacing",
+      "label": "Espacio entre logos (escritorio)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "logo_spacing_mobile",
+      "label": "Espacio entre logos (móvil)",
+      "min": 15,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "logo_opacity",
+      "label": "Opacidad de logos",
+      "min": 60,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 85
+    },
+    {
+      "type": "checkbox",
+      "id": "grayscale",
+      "label": "Aplicar escala de grises",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "grayscale_amount",
+      "label": "Cantidad de escala de grises",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Diseño móvil"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "Diseño en móvil",
+      "options": [
+        { "value": "two_rows", "label": "Dos filas" },
+        { "value": "scroll", "label": "Desplazamiento horizontal" }
+      ],
+      "default": "scroll",
+      "info": "Elige cómo se muestran los logos en dispositivos móviles"
+    },
+    {
+      "type": "header",
+      "content": "Espaciado de sección"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Espaciado superior (escritorio)",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Espaciado inferior (escritorio)",
+      "min": 0,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "label": "Espaciado superior (móvil)",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "label": "Espaciado inferior (móvil)",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Ancho del contenedor",
+      "min": 800,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "default": 1200
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Color de fondo",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Certificaciones"
+    }
+  ]
+}
 {% endschema %}
