@@ -33,13 +33,13 @@
             "button_label": "Ver Revistem Hair",
             "link": "shopify://products/revistem-hair",
             "link-2": "",
-            "button_style_secondary": true,
+            "button_style_secondary": false,
             "box_align": "bottom-center",
             "show_text_box": false,
             "container_size": 520,
             "text_alignment": "center",
             "image_overlay_opacity": 10,
-            "color_scheme": "accent-1",
+            "color_scheme": "inverse",
             "box_align_mobile": "middle",
             "text_alignment_mobile": "center"
           }
@@ -65,13 +65,13 @@
             "button_label": "Ver Revistem Hair Forte",
             "link": "shopify://products/revistem-hair-forte",
             "link-2": "",
-            "button_style_secondary": true,
+            "button_style_secondary": false,
             "box_align": "bottom-center",
             "show_text_box": false,
             "container_size": 750,
             "text_alignment": "center",
             "image_overlay_opacity": 10,
-            "color_scheme": "accent-1",
+            "color_scheme": "inverse",
             "box_align_mobile": "middle",
             "text_alignment_mobile": "center"
           }
@@ -97,13 +97,13 @@
             "button_label": "Entender la fórmula",
             "link": "/#shopify-section-template--29599440961861__lumin_hero_Pq7Gre",
             "link-2": "",
-            "button_style_secondary": true,
+            "button_style_secondary": false,
             "box_align": "bottom-center",
             "show_text_box": false,
             "container_size": 600,
             "text_alignment": "center",
             "image_overlay_opacity": 10,
-            "color_scheme": "accent-1",
+            "color_scheme": "inverse",
             "box_align_mobile": "middle",
             "text_alignment_mobile": "center"
           }
