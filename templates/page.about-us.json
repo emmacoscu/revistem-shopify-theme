@@ -292,7 +292,7 @@
         "show_vendor": false,
         "show_rating": true,
         "show_scroll_tags": false,
-        "show_product_description": false,
+        "show_product_description": true,
         "description_font_size": 14,
         "description_word_limit": 20,
         "quick_add": "standard",
@@ -365,7 +365,13 @@
         "text_YewtBN": {
           "type": "text",
           "settings": {
-            "text": "<p>Revistem está formulado para complementar cualquier protocolo de salud capilar activo. Sin interferencias con otros suplementos, sin contraindicaciones conocidas, apto para uso prolongado.</p><p><em>Revistem no sustituye ningún tratamiento médico ni ninguna dieta equilibrada. Si sigues un tratamiento prescrito por un profesional sanitario, consúltale antes de incorporar cualquier suplemento.</em></p>"
+            "text": "<h3>Revistem está formulado para complementar cualquier protocolo de salud capilar activo. Sin interferencias con otros suplementos, sin contraindicaciones conocidas, apto para uso prolongado.</h3>"
+          }
+        },
+        "text_LAbVmY": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Revistem no sustituye ningún tratamiento médico ni ninguna dieta equilibrada. Si sigues un tratamiento prescrito por un profesional sanitario, consúltale antes de incorporar cualquier suplemento.</em></p>"
           }
         },
         "button_8w83gA": {
@@ -384,6 +390,7 @@
       "block_order": [
         "heading_wxerwL",
         "text_YewtBN",
+        "text_LAbVmY",
         "button_8w83gA"
       ],
       "name": "t:sections.rich-text.presets.name",
