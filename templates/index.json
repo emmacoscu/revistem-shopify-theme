@@ -555,6 +555,56 @@
         "include_margins": false
       }
     },
+    "17773681305bdc2b19": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_95f4473_CwMDgt": {
+          "type": "ai_gen_block_95f4473",
+          "settings": {
+            "show_header": true,
+            "title": "Certificaciones y estándares",
+            "subtitle": "Fabricado bajo estándares europeos de calidad y seguridad",
+            "title_size": 16,
+            "title_size_mobile": 14,
+            "title_weight": "500",
+            "title_transform": "uppercase",
+            "title_color": "#2c2c2c",
+            "subtitle_size": 13,
+            "subtitle_size_mobile": 12,
+            "subtitle_color": "#6b6b6b",
+            "subtitle_opacity": 75,
+            "header_spacing": 40,
+            "subtitle_spacing": 10,
+            "logo_1": "shopify://shop_images/0c42438b9ee32255e18497d14d024547-1-Photoroom-300x300.png",
+            "logo_2": "shopify://shop_images/aecoc-1.png",
+            "logo_3": "shopify://shop_images/efsa-1.png",
+            "logo_4": "shopify://shop_images/iso-1-150x150.png",
+            "logo_5": "shopify://shop_images/ministerio-de-espana.png",
+            "logo_max_width": 100,
+            "logo_max_height": 60,
+            "logo_max_width_mobile": 80,
+            "logo_max_height_mobile": 50,
+            "logo_spacing": 50,
+            "logo_spacing_mobile": 30,
+            "logo_opacity": 85,
+            "grayscale": false,
+            "grayscale_amount": 100,
+            "mobile_layout": "scroll",
+            "section_padding_top": 60,
+            "section_padding_bottom": 60,
+            "section_padding_top_mobile": 40,
+            "section_padding_bottom_mobile": 40,
+            "container_width": 1200,
+            "background_color": "#f9f2e9"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_95f4473_CwMDgt"
+      ],
+      "settings": {}
+    },
     "collapsible_content_jdrwfj": {
       "type": "collapsible-content",
       "blocks": {
@@ -754,56 +804,6 @@
         "heading_font": "serif",
         "main_font": "system_ui_n4"
       }
-    },
-    "17773681305bdc2b19": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_95f4473_CwMDgt": {
-          "type": "ai_gen_block_95f4473",
-          "settings": {
-            "show_header": true,
-            "title": "Certificaciones y estándares",
-            "subtitle": "Fabricado bajo estándares europeos de calidad y seguridad",
-            "title_size": 16,
-            "title_size_mobile": 14,
-            "title_weight": "500",
-            "title_transform": "uppercase",
-            "title_color": "#2c2c2c",
-            "subtitle_size": 13,
-            "subtitle_size_mobile": 12,
-            "subtitle_color": "#6b6b6b",
-            "subtitle_opacity": 75,
-            "header_spacing": 40,
-            "subtitle_spacing": 10,
-            "logo_1": "shopify://shop_images/0c42438b9ee32255e18497d14d024547-1-Photoroom-300x300.png",
-            "logo_2": "shopify://shop_images/aecoc-1.png",
-            "logo_3": "shopify://shop_images/efsa-1.png",
-            "logo_4": "shopify://shop_images/iso-1-150x150.png",
-            "logo_5": "shopify://shop_images/ministerio-de-espana.png",
-            "logo_max_width": 100,
-            "logo_max_height": 60,
-            "logo_max_width_mobile": 80,
-            "logo_max_height_mobile": 50,
-            "logo_spacing": 50,
-            "logo_spacing_mobile": 30,
-            "logo_opacity": 85,
-            "grayscale": false,
-            "grayscale_amount": 100,
-            "mobile_layout": "scroll",
-            "section_padding_top": 60,
-            "section_padding_bottom": 60,
-            "section_padding_top_mobile": 40,
-            "section_padding_bottom_mobile": 40,
-            "container_width": 1200,
-            "background_color": "#f9f2e9"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_95f4473_CwMDgt"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -818,9 +818,9 @@
     "rich_text_Mki7TU",
     "lumin_hero_Pq7Gre",
     "1774355846783fd27e",
+    "17773681305bdc2b19",
     "collapsible_content_jdrwfj",
     "before_after_rmYV6L",
-    "autoplay_video_pUjczr",
-    "17773681305bdc2b19"
+    "autoplay_video_pUjczr"
   ]
 }
