@@ -1,6 +1,380 @@
+{% doc %}
+  @prompt
+    Design a premium “brand origin” section for a science-based hair supplement brand (Revistem).
+    
+    Tone:
+    - Rational, evidence-based, non-marketing
+    - Founder explanation, not storytelling cliché
+    - No hype, no exaggeration
+    
+    Content (Spanish, refine but keep meaning):
+    Revistem nació de una búsqueda personal...
+    
+    Requirements:
+    - Break into 4–5 short paragraphs (max 2–3 lines each)
+    - Clear logical flow:
+      1. búsqueda personal
+      2. problema del mercado
+      3. frustración con soluciones existentes
+      4. decisión de formular desde cero
+      5. cierre
+    
+    - Improve readability and flow
+    - Keep tone serious and credible
+    - Avoid emotional or inspirational language
+    
+    Design:
+    - Background color: #F9F2E9
+    - Left-aligned text
+    - Narrow readable width (editorial style)
+    - High vertical spacing between paragraphs
+    - No cards, no boxes
+    - Clean typography hierarchy
+    
+    Output:
+    - Final Spanish copy
+    - Paragraph structure
+    - Suggested spacing and layout
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-brand-origin-{{ ai_gen_id }} {
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_horizontal }}px {{ block.settings.padding_bottom }}px;
+    width: 100%;
+    display: block;
+  }
+
+  .ai-brand-origin-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.content_width }}px;
+    margin: 0;
+  }
+
+  .ai-brand-origin-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    line-height: 1.2;
+    margin: 0 0 {{ block.settings.heading_spacing }}px 0;
+    color: {{ block.settings.text_color }};
+    font-weight: 600;
+  }
+
+  .ai-brand-origin-paragraph-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    line-height: {{ block.settings.line_height }};
+    margin: 0 0 {{ block.settings.paragraph_spacing }}px 0;
+    color: {{ block.settings.text_color }};
+    opacity: {{ block.settings.text_opacity | divided_by: 100.0 }};
+  }
+
+  .ai-brand-origin-paragraph-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-brand-origin-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_top_mobile }}px {{ block.settings.padding_horizontal_mobile }}px {{ block.settings.padding_bottom_mobile }}px;
+    }
+
+    .ai-brand-origin-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size_mobile }}px;
+      margin-bottom: {{ block.settings.heading_spacing_mobile }}px;
+    }
+
+    .ai-brand-origin-paragraph-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size_mobile }}px;
+      margin-bottom: {{ block.settings.paragraph_spacing_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-brand-origin-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-brand-origin-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-brand-origin-heading-{{ ai_gen_id }}">
+        {{ block.settings.heading }}
+      </h2>
+    {% endif %}
+
+    {% if block.settings.paragraph_1 != blank %}
+      <div class="ai-brand-origin-paragraph-{{ ai_gen_id }}">
+        {{ block.settings.paragraph_1 }}
+      </div>
+    {% endif %}
+
+    {% if block.settings.paragraph_2 != blank %}
+      <div class="ai-brand-origin-paragraph-{{ ai_gen_id }}">
+        {{ block.settings.paragraph_2 }}
+      </div>
+    {% endif %}
+
+    {% if block.settings.paragraph_3 != blank %}
+      <div class="ai-brand-origin-paragraph-{{ ai_gen_id }}">
+        {{ block.settings.paragraph_3 }}
+      </div>
+    {% endif %}
+
+    {% if block.settings.paragraph_4 != blank %}
+      <div class="ai-brand-origin-paragraph-{{ ai_gen_id }}">
+        {{ block.settings.paragraph_4 }}
+      </div>
+    {% endif %}
+
+    {% if block.settings.paragraph_5 != blank %}
+      <div class="ai-brand-origin-paragraph-{{ ai_gen_id }}">
+        {{ block.settings.paragraph_5 }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Brand origin",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Nuestro origen"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_1",
+      "label": "Paragraph 1",
+      "default": "<p>Revistem nació de una búsqueda personal. Tras años probando productos para el cuidado capilar, me di cuenta de que la mayoría prometían resultados sin ofrecer una base científica real.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_2",
+      "label": "Paragraph 2",
+      "default": "<p>El mercado estaba saturado de soluciones superficiales: champús con ingredientes agresivos, tratamientos tópicos con eficacia limitada y suplementos con dosis insuficientes o formulaciones poco estudiadas.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_3",
+      "label": "Paragraph 3",
+      "default": "<p>La frustración fue el punto de partida. No encontraba un producto que combinara ingredientes respaldados por estudios clínicos, en dosis efectivas y con una formulación pensada para actuar desde el interior.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_4",
+      "label": "Paragraph 4",
+      "default": "<p>Decidí formular desde cero. Trabajé con expertos en nutrición y dermatología para crear un suplemento basado en evidencia, sin concesiones al marketing ni a las tendencias pasajeras.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph_5",
+      "label": "Paragraph 5",
+      "default": "<p>Revistem es el resultado de ese proceso: un enfoque racional, transparente y efectivo para el cuidado capilar.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "label": "Content width",
+      "min": 400,
+      "max": 900,
+      "step": 50,
+      "unit": "px",
+      "default": 650
+    },
+    {
+      "type": "range",
+      "id": "paragraph_spacing",
+      "label": "Paragraph spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "paragraph_spacing_mobile",
+      "label": "Paragraph spacing (mobile)",
+      "min": 15,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Heading bottom spacing",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing_mobile",
+      "label": "Heading bottom spacing (mobile)",
+      "min": 15,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 35
+    },
+    {
+      "type": "header",
+      "content": "Padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "label": "Horizontal padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "label": "Top padding (mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "label": "Bottom padding (mobile)",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal_mobile",
+      "label": "Horizontal padding (mobile)",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "label": "Heading size (mobile)",
+      "min": 18,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 17
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Text size (mobile)",
+      "min": 13,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "line_height",
+      "label": "Line height",
+      "min": 1.2,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.7
+    },
+    {
+      "type": "range",
+      "id": "text_opacity",
+      "label": "Text opacity",
+      "min": 70,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 85
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F9F2E9"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#2B2B2B"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brand origin"
+    }
+  ],
+  "tag": null
+}
 {% endschema %}
