@@ -12,6 +12,38 @@
     "slideshow_iabDhC": {
       "type": "slideshow",
       "blocks": {
+        "slide_dDHNRJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/BannerV2.jpg",
+            "mobile_image": "shopify://shop_images/Banner-Home-3-responsve.jpg",
+            "caption": "",
+            "block_cap_size": 20,
+            "cap_color": "#222222",
+            "heading": "Cuida tu cabello desde dentro",
+            "heading_font_size_desktop": 60,
+            "heading_font_size_mobile": 44,
+            "heading_line_height_desktop": 1.2,
+            "heading_line_height_mobile": 1.2,
+            "subheading": "Soporte nutricional y antioxidante para el folículo. Sin atajos.",
+            "subheading_font_size_desktop": 20,
+            "subheading_font_size_mobile": 16,
+            "subheading_line_height_desktop": 1.4,
+            "subheading_line_height_mobile": 1.4,
+            "button_label": "Ver Revistem Hair",
+            "link": "shopify://products/revistem-hair",
+            "link-2": "shopify://products/revistem-hair-forte",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "container_size": 800,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "box_align_mobile": "middle",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_TnkpPR": {
           "type": "slide",
           "settings": {
@@ -38,38 +70,6 @@
             "show_text_box": false,
             "container_size": 550,
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-1",
-            "box_align_mobile": "middle",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_dDHNRJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/BannerV2.jpg",
-            "mobile_image": "shopify://shop_images/Banner-Home-3-responsve.jpg",
-            "caption": "",
-            "block_cap_size": 20,
-            "cap_color": "#222222",
-            "heading": "",
-            "heading_font_size_desktop": 60,
-            "heading_font_size_mobile": 44,
-            "heading_line_height_desktop": 1.2,
-            "heading_line_height_mobile": 1.2,
-            "subheading": "",
-            "subheading_font_size_desktop": 20,
-            "subheading_font_size_mobile": 16,
-            "subheading_line_height_desktop": 1.4,
-            "subheading_line_height_mobile": 1.4,
-            "button_label": "",
-            "link": "",
-            "link-2": "shopify://products/revistem-hair-forte",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "container_size": 800,
-            "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-1",
             "box_align_mobile": "middle",
@@ -110,8 +110,8 @@
         }
       },
       "block_order": [
-        "slide_TnkpPR",
         "slide_dDHNRJ",
+        "slide_TnkpPR",
         "slide_zj8jbr"
       ],
       "name": "t:sections.slideshow.presets.name",
