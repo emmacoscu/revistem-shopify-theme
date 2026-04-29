@@ -78,7 +78,6 @@
         },
         "slide_TnkpPR": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/freepik_the-man-on-the-left-is-lo_2872056596_1.jpg",
             "mobile_image": "shopify://shop_images/freepik_aply-the-label-of-the-pro_2842316665.png",
