@@ -163,7 +163,7 @@
         "show_scroll_tags": false,
         "show_product_description": true,
         "description_font_size": 14,
-        "description_word_limit": 25,
+        "description_word_limit": 12,
         "quick_add": "standard",
         "show_secondary_add": false,
         "columns_mobile": "1",
