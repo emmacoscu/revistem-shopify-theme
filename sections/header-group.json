@@ -53,6 +53,7 @@
     },
     "annunce_timer_VzcqBL": {
       "type": "annunce-timer",
+      "disabled": true,
       "name": "Countdown Promo Timer",
       "settings": {
         "visibility": "both",
